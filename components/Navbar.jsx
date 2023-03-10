@@ -81,7 +81,7 @@ const Navbar = () => {
                 </ul>
                 <div className='pt-10'>
                     <p className='uppercase'>
-                        Let's Connect!
+                        Let&apos;s Connect!
                     </p>
                     <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>
                         <div className='rounded-full shadow-lg shadow-grey-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
