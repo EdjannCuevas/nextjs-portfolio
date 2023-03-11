@@ -51,7 +51,7 @@ const Navbar = () => {
                         src='/../public/assets/navlogo.png'
                         width='87'
                         height='35'
-                        alt='/'
+                        alt='/logo'
                     />
                     <div onClick={handleNav} className='rounded-full shadow-lg shadow-grey-400 p-3 cursor-pointer'>
                         <AiOutlineClose/>
