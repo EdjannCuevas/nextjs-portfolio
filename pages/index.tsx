@@ -7,6 +7,11 @@ import Projects from '../components/Projects'
 import Contact from '../components/Contact'
 
 export default function Home() {
+
+  const handleLink = (url: string) => {
+    window.open(url, '_blank', 'noopener,noreferrer');
+  }
+
   return (
     <div>
       <Head>
@@ -15,8 +20,8 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Navbar/>
-      <Main />
+      <Navbar handleLink={handleLink}/>
+      <Main handleLink={handleLink}/>
       <About />
       <Skills />
       <Projects />

@@ -3,7 +3,8 @@ import { AiOutlineMail } from 'react-icons/ai'
 import { FaLinkedinIn, FaGithub } from 'react-icons/fa'
 import { BsFillPersonLinesFill } from 'react-icons/bs'
 
-const Main = () => {
+const Main = ({ handleLink }) => {
+
   return (
     <div id='main' className='w-full h-screen text-center'>
         <div className='max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center'>
@@ -22,10 +23,10 @@ const Main = () => {
                 </p>
                 <div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
                     <div className='rounded-full shadow-lg shadow-grey-400 p-6 cursor-pointer hover:scale-105 ease-in duration-300'>
-                        <FaLinkedinIn/>
+                        <FaLinkedinIn onClick={() => handleLink('https://www.linkedin.com/in/edgardo-cuevas-979311255/')}/>
                     </div>
                     <div className='rounded-full shadow-lg shadow-grey-400 p-6 cursor-pointer hover:scale-105 ease-in duration-300'>
-                        <FaGithub/>
+                        <FaGithub onClick={() => handleLink('https://github.com/EdjannCuevas')}/>
                     </div>
                     <div className='rounded-full shadow-lg shadow-grey-400 p-6 cursor-pointer hover:scale-105 ease-in duration-300'>
                         <AiOutlineMail/>
