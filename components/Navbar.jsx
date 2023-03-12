@@ -20,6 +20,7 @@ const Navbar = () => {
                 alt='/logo'
                 width='90'
                 height='25'
+                unoptimized
             />
             <div>
                 <ul className='hidden md:flex'>
