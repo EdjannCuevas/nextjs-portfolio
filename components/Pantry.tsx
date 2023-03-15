@@ -29,7 +29,7 @@ const Pantry = () => {
     }
 
     return (
-        <div className='h-[300px] w-[330px] md:h-[560px] md:w-[820px] m-auto py-16 px-4 relative group'>
+        <div className='max-w-full max-h-full h-[310px] w-[360px] md:h-[560px] md:w-[820px] m-auto py-16 px-4 relative group'>
             <div
                 style={{backgroundImage: `url(${slides[currentIndex]})`}}
                 className='w-full h-full rounded-2xl bg-cover bg-center duration-500 shadow-lg'

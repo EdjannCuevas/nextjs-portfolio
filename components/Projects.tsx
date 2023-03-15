@@ -6,9 +6,9 @@ const Projects = () => {
   return (
     <div
       id='projects'
-      className='w-full md:h-screen p-2 flex py-20'
+      className='w-full md:h-screen p-2 flex py-20 bg-red-300'
     >
-        <div className='max-w-[1240px] m-auto flex flex-col md:grid grid-cols-3 gap-8'>
+        <div className='max-w-[1240px] m-auto flex flex-col md:flex lg:grid grid-cols-3 gap-8'>
             <div className='col-span-1'>
               <p className='text-xl tracking-widest uppercase text-[#46a8fd]'>
                 Projects
