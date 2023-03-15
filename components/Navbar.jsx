@@ -27,7 +27,7 @@ const Navbar = ({ handleLink }) => {
     }
 
   return (
-    <div className={shadow ? 'fixed w-full h-20 shadow-xl z-[100]' : 'fixed w-full h-20 z-[100]'}>
+    <div className={shadow ? 'fixed w-full h-20 shadow-xl bg-[#ecf0f3] z-[100]' : 'fixed w-full h-20 z-[100]'}>
         <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
             <Image
                 src={logo}
@@ -103,18 +103,23 @@ const Navbar = ({ handleLink }) => {
                         Let&apos;s Connect!
                     </p>
                     <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>
-                        <div className='rounded-full shadow-lg shadow-grey-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                            <FaLinkedinIn onClick={() => handleLink('https://www.linkedin.com/in/edgardo-cuevas-979311255/')}/>
+                        <div
+                            onClick={() => handleLink('https://www.linkedin.com/in/edgardo-cuevas-979311255/')}
+                            className='rounded-full shadow-lg shadow-grey-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
+                            <FaLinkedinIn />
                         </div>
-                        <div className='rounded-full shadow-lg shadow-grey-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                            <FaGithub onClick={() => handleLink('https://github.com/EdjannCuevas')}/>
+                        <div
+                            onClick={() => handleLink('https://github.com/EdjannCuevas')}
+                            className='rounded-full shadow-lg shadow-grey-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
+                            <FaGithub />
                         </div>
-                        <div className='rounded-full shadow-lg shadow-grey-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                            <AiOutlineMail/>
-                        </div>
-                        <div className='rounded-full shadow-lg shadow-grey-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                            <BsFillPersonLinesFill/>
-                        </div>
+                        <Link
+                            href='/#contact'
+                            className='rounded-full shadow-lg shadow-grey-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'
+                            onClick={() => setNav(false)}   
+                        >
+                            <AiOutlineMail />
+                        </Link>
                     </div>
                 </div>
             </div>

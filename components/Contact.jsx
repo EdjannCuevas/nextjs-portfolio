@@ -6,19 +6,21 @@ const Contact = ({ handleLink }) => {
   return (
     <div id='contact' className='w-full md:h-screen p-2 flex items-center py-20'>
         <div className='w-full m-auto flex items-center justify-center'>
-            <div className='w-full md:w-[600px] lg:w-[600px] border-2 rounded p-2 shadow-lg'>
-              Contact
-              <div className='flex flex-row justify-around items-stretch '>
-                <div className='rounded-full shadow-lg shadow-grey-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                    <FaLinkedinIn onClick={() => handleLink('https://www.linkedin.com/in/edgardo-cuevas-979311255/')}/>
+            <div className='w-full md:w-[600px] lg:w-[600px] border-2 rounded p-5 shadow-lg'>
+              <div className='flex flex-row justify-around items-stretch'>
+                <div
+                  onClick={() => handleLink('https://www.linkedin.com/in/edgardo-cuevas-979311255/')} 
+                  className='rounded shadow-lg shadow-grey-400 p-5 cursor-pointer hover:scale-105 ease-in duration-300'>
+                  <FaLinkedinIn />
                 </div>
-                <div className='rounded-full shadow-lg shadow-grey-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                    <FaGithub onClick={() => handleLink('https://github.com/EdjannCuevas')}/>
+                <div
+                   onClick={() => handleLink('https://github.com/EdjannCuevas')}
+                  className='rounded shadow-lg shadow-grey-400 p-5 cursor-pointer hover:scale-105 ease-in duration-300'>
+                  <FaGithub />
                 </div>
               </div>
               <form>
                 <div className='flex flex-col py-2 w-full h-auto bg-red'>
-
                   <div className='flex flex-col py-2'>
                     <label className='uppercase text-sm py-3'>Name</label>
                     <input
