@@ -7,7 +7,7 @@ interface ContactProps {
 
 const Contact: React.FC<ContactProps> = ({ handleLink }) => {
   return (
-    <div id='contact' className='w-full md:h-screen p-2 flex items-center py-20'>
+    <div id='contact' className='w-full md:h-screen p-5 flex items-center py-20'>
         <div className='w-full m-auto flex items-center justify-center'>
             <div className='w-full md:w-[1240] lg:w-[1240px] border-2 rounded p-5 shadow-lg'>
               <div className='flex flex-row justify-between '>
