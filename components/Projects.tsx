@@ -1,11 +1,7 @@
 import React, { useState } from 'react'
-import pic from '../public/images/projects/addIngredients.png'
-import pic2 from '../public/images/projects/recipesPage.png'
-import pic3 from '../public/images/projects/ingredientsListsPage.png'
-import pic4 from '../public/images/projects/loginPage.png'
+import Pantry from './Pantry'
 
 const Projects = () => {
-  const slides = [ pic, pic2, pic3, pic4 ];
 
   return (
     <div
@@ -21,10 +17,8 @@ const Projects = () => {
                 Pantry
               </h2>
             </div>
-            <div className='col-span-2 w-full'>
-              <div style={{backgroundImage: "url(/images/projects/addIngredients.png)"}}>
-                sdfdfgdfgsdfsdsdfdkjsdfnsdfjngsadfgdsadfgdsasdf
-              </div>
+            <div className='col-span-2'>
+              <Pantry/>
             </div>
         </div>
     </div>
