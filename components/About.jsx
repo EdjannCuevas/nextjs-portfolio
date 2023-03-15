@@ -1,4 +1,6 @@
+import Image from 'next/image'
 import React from 'react'
+import AboutPhoto from '../public/images/about.png'
 
 const About = () => {
   return (
@@ -14,7 +16,13 @@ const About = () => {
                 <p>If you're looking for a software engineer who is passionate about their work and brings a unique blend of technical skills and creative thinking to the table, I'd love to hear from you. Let's work together to build something amazing!</p>
               </div>
             </div>
-            <div></div>
+            <div className='py-20 flex justify-center items-center'>
+              <Image
+                className='w-[300px] lg:w-[600px] rounded shadow-lg shadow-grey-400 border-3 cursor-pointer hover:scale-105 ease-in duration-300'
+                src={AboutPhoto}
+                alt='group project'
+              />
+            </div>
         </div>
     </div>
   )
