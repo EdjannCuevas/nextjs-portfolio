@@ -3,7 +3,11 @@ import { AiOutlineMail } from 'react-icons/ai'
 import { FaLinkedinIn, FaGithub } from 'react-icons/fa'
 import Link from 'next/link'
 
-const Main = ({ handleLink }) => {
+interface MainProps {
+    handleLink: (arg: string) => void;
+}
+
+const Main: React.FC<MainProps> = ({ handleLink }) => {
 
   return (
     <div id='main' className='w-full h-screen text-center'>
