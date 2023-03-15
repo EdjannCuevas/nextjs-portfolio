@@ -23,20 +23,20 @@ const Main: React.FC<MainProps> = ({ handleLink }) => {
                     A Software Developer
                 </h1>
                 <p className='py-4 text-gray-600 max-w-[70%] m-auto'>
-                    I'm a software developer specializing in building and designing responsive front-end web applications, equipped with skills in building full stack web applications..
+                    I'm a software developer specializing in building and designing responsive front-end web applications, equipped with skills in building full stack web applications.
                 </p>
                 <div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
                     <div
                         onClick={() => handleLink('https://www.linkedin.com/in/edgardo-cuevas-979311255/')}
-                        className='rounded shadow-lg shadow-grey-400 p-6 cursor-pointer hover:scale-105 ease-in duration-300'>
+                        className='rounded shadow-lg shadow-grey-400 p-6 cursor-pointer hover:scale-125 ease-in duration-300'>
                         <FaLinkedinIn />
                     </div>
                     <div
                         onClick={() => handleLink('https://github.com/EdjannCuevas')}
-                        className='rounded shadow-lg shadow-grey-400 p-6 cursor-pointer hover:scale-105 ease-in duration-300'>
+                        className='rounded shadow-lg shadow-grey-400 p-6 cursor-pointer hover:scale-125 ease-in duration-300'>
                         <FaGithub />
                     </div>
-                    <Link href='/#contact' className='rounded shadow-lg shadow-grey-400 p-6 cursor-pointer hover:scale-105 ease-in duration-300'>
+                    <Link href='/#contact' className='rounded shadow-lg shadow-grey-400 p-6 cursor-pointer hover:scale-125 ease-in duration-300'>
                         <AiOutlineMail />
                     </Link>
                 </div>
