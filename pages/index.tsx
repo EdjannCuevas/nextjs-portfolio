@@ -25,7 +25,7 @@ export default function Home() {
       <About />
       <Skills />
       <Projects />
-      <Contact />
+      <Contact handleLink={handleLink}/>
     </div>
   )
 }
