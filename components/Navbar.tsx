@@ -6,9 +6,11 @@ import { FaLinkedinIn, FaGithub } from 'react-icons/fa'
 import { BsFillPersonLinesFill } from 'react-icons/bs'
 import logo from 'public/images/navLogo.png'
 
+interface NavBarProps {
+    handleLink: (arg: string) => void
+}
 
-
-const Navbar = ({ handleLink }) => {
+const Navbar: React.FC<NavBarProps> = ({ handleLink }) => {
     const [nav, setNav] = useState(false);
     const [shadow, setShadow] = useState(false);
 

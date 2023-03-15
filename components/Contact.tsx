@@ -1,8 +1,11 @@
 import React from 'react'
 import { FaLinkedinIn, FaGithub } from 'react-icons/fa'
-import { BsFillPersonLinesFill } from 'react-icons/bs'
 
-const Contact = ({ handleLink }) => {
+interface ContactProps {
+  handleLink: (arg: string) => void;
+}
+
+const Contact: React.FC<ContactProps> = ({ handleLink }) => {
   return (
     <div id='contact' className='w-full md:h-screen p-2 flex items-center py-20'>
         <div className='w-full m-auto flex items-center justify-center'>
@@ -12,12 +15,14 @@ const Contact = ({ handleLink }) => {
                 <div className='flex'>
                   <div
                     onClick={() => handleLink('https://www.linkedin.com/in/edgardo-cuevas-979311255/')} 
-                    className='flex items-center justify-center rounded shadow-lg shadow-grey-400 p-5 cursor-pointer hover:scale-105 ease-in duration-300'>
+                    className='flex items-center justify-center rounded shadow-lg shadow-grey-400 p-5 cursor-pointer hover:scale-105 ease-in duration-300 m-1'
+                  >
                     <FaLinkedinIn />
                   </div>
                   <div
                     onClick={() => handleLink('https://github.com/EdjannCuevas')}
-                    className='flex items-center justify-center rounded shadow-lg shadow-grey-400 p-5 cursor-pointer hover:scale-105 ease-in duration-300'>
+                    className='flex items-center justify-center rounded shadow-lg shadow-grey-400 p-5 cursor-pointer hover:scale-105 ease-in duration-300 m-1'
+                  >
                     <FaGithub />
                   </div>
                 </div>
