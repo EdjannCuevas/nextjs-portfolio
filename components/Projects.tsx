@@ -32,7 +32,7 @@ const Projects = () => {
             </h2>
             <p>Pantry is a web app that helps users manage their pantry inventory and find recipes using ingredients they already have at home. With a simple interface and easy-to-use features, Pantry makes meal planning and grocery shopping a breeze.</p>
             <div className='w-full'>
-              <h3 className='text-xl'>
+              <h3 className='text-xl py-5'>
                 Stack:
               </h3>
               <div className='grid grid-cols-2 m-1'>
