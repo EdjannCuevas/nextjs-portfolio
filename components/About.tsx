@@ -33,7 +33,7 @@ const About = () => {
             </div>
             <div className='py-20 flex justify-center items-center'>
               <Image
-                className='w-[300px] lg:w-[600px] rounded shadow-lg shadow-grey-400 border-3 cursor-pointer hover:scale-105 ease-in duration-300'
+                className='w-[300px] lg:w-[600px] rounded shadow-lg shadow-grey-400 border-3 cursor-pointer hover:scale-95 ease-in duration-300'
                 src={AboutPhoto}
                 alt='group project'
               />
