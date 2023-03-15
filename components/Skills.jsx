@@ -26,8 +26,8 @@ const Skills = () => {
                     <Image
                       alt='/'
                       src={Html}
-                      width='64'
-                      height='64'
+                      width='30'
+                      height='30'
                     />
                   </div>
                   <div className='flex flex-col items-center justify-center'>
@@ -41,8 +41,8 @@ const Skills = () => {
                     <Image
                       alt='/'
                       src={Css}
-                      width='64'
-                      height='64'
+                      width='30'
+                      height='30'
                     />
                   </div>
                   <div className='flex flex-col items-center justify-center'>
@@ -56,8 +56,8 @@ const Skills = () => {
                     <Image
                       alt='/'
                       src={Javascript}
-                      width='64'
-                      height='64'
+                      width='30'
+                      height='30'
                     />
                   </div>
                   <div className='flex flex-col items-center justify-center'>
@@ -71,8 +71,8 @@ const Skills = () => {
                     <Image
                       alt='/'
                       src={Node}
-                      width='64'
-                      height='64'
+                      width='30'
+                      height='30'
                     />
                   </div>
                   <div className='flex flex-col items-center justify-center'>
@@ -86,8 +86,8 @@ const Skills = () => {
                     <Image
                       alt='/'
                       src={Reactlogo}
-                      width='64'
-                      height='64'
+                      width='30'
+                      height='30'
                     />
                   </div>
                   <div className='flex flex-col items-center justify-center'>
@@ -101,8 +101,8 @@ const Skills = () => {
                     <Image
                       alt='/'
                       src={Github1}
-                      width='64'
-                      height='64'
+                      width='30'
+                      height='30'
                     />
                   </div>
                   <div className='flex flex-col items-center justify-center'>
@@ -116,8 +116,8 @@ const Skills = () => {
                     <Image
                       alt='/'
                       src={Firebase}
-                      width='64'
-                      height='64'
+                      width='30'
+                      height='30'
                     />
                   </div>
                   <div className='flex flex-col items-center justify-center'>
@@ -131,8 +131,8 @@ const Skills = () => {
                     <Image
                       alt='/'
                       src={Mongo}
-                      width='64'
-                      height='64'
+                      width='30'
+                      height='30'
                     />
                   </div>
                   <div className='flex flex-col items-center justify-center'>
@@ -146,8 +146,8 @@ const Skills = () => {
                     <Image
                       alt='/'
                       src={Nextjs}
-                      width='64'
-                      height='64'
+                      width='30'
+                      height='30'
                     />
                   </div>
                   <div className='flex flex-col items-center justify-center'>
@@ -161,8 +161,8 @@ const Skills = () => {
                     <Image
                       alt='/'
                       src={Tailwind}
-                      width='64'
-                      height='64'
+                      width='30'
+                      height='30'
                     />
                   </div>
                   <div className='flex flex-col items-center justify-center'>
@@ -176,8 +176,8 @@ const Skills = () => {
                     <Image
                       alt='/'
                       src={Postgres}
-                      width='64'
-                      height='64'
+                      width='30'
+                      height='30'
                     />
                   </div>
                   <div className='flex flex-col items-center justify-center'>
@@ -191,8 +191,8 @@ const Skills = () => {
                     <Image
                       alt='/'
                       src={Typescript}
-                      width='64'
-                      height='64'
+                      width='30'
+                      height='30'
                     />
                   </div>
                   <div className='flex flex-col items-center justify-center'>
