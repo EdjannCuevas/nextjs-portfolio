@@ -3,7 +3,6 @@ import Link from 'next/link'
 import React, { useState, useEffect } from 'react'
 import { AiOutlineClose, AiOutlineMenu, AiOutlineMail } from 'react-icons/ai'
 import { FaLinkedinIn, FaGithub } from 'react-icons/fa'
-import { BsFillPersonLinesFill } from 'react-icons/bs'
 import logo from 'public/images/navLogo.png'
 
 interface NavBarProps {
@@ -84,7 +83,7 @@ const Navbar: React.FC<NavBarProps> = ({ handleLink }) => {
             </div>
             <div className='py-4 flex-col'>
                 <ul className='uppercase'>
-                    <Link onClick={() => setNav(false)} href='/'>
+                    <Link className='hover:scale-200 ease-in duration-300' onClick={() => setNav(false)} href='/'>
                         <li className='py-4 text-sm'>Home</li>
                     </Link>
                     <Link onClick={() => setNav(false)} href='/#about'>
@@ -107,17 +106,17 @@ const Navbar: React.FC<NavBarProps> = ({ handleLink }) => {
                     <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>
                         <div
                             onClick={() => handleLink('https://www.linkedin.com/in/edgardo-cuevas-979311255/')}
-                            className='rounded-full shadow-lg shadow-grey-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
+                            className='rounded-full shadow-lg shadow-grey-400 p-3 cursor-pointer hover:scale-125 ease-in duration-300'>
                             <FaLinkedinIn />
                         </div>
                         <div
                             onClick={() => handleLink('https://github.com/EdjannCuevas')}
-                            className='rounded-full shadow-lg shadow-grey-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
+                            className='rounded-full shadow-lg shadow-grey-400 p-3 cursor-pointer hover:scale-125 ease-in duration-300'>
                             <FaGithub />
                         </div>
                         <Link
                             href='/#contact'
-                            className='rounded-full shadow-lg shadow-grey-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'
+                            className='rounded-full shadow-lg shadow-grey-400 p-3 cursor-pointer hover:scale-125 ease-in duration-300'
                             onClick={() => setNav(false)}   
                         >
                             <AiOutlineMail />
