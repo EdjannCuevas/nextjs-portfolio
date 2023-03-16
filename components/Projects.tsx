@@ -23,7 +23,7 @@ const Projects: React.FC<ProjectsProps> = ({ handleLink }) => {
   return (
     <div
       id='projects'
-      className='w-full p-4'
+      className='w-full p-4 py-20'
     >
       <div>
         <p className='text-xl tracking-widest uppercase text-[#46a8fd]'>
