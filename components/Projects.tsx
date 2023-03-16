@@ -6,7 +6,7 @@ import Firebase from '../public/images/skills/firebase.png'
 import Javascript from '../public/images/skills/javascript.png'
 import Spring from '../public/images/skills/spring.png'
 import Node from '../public/images/skills/node.png'
-import Reactlogo from '../public/images/skills/react.png'
+import ReactLogo from '../public/images/skills/react.png'
 import Postgres from '../public/images/skills/postgres.png'
 import Typescript from '../public/images/skills/typescript.png'
 import JavaLogo from '../public/images/skills/javalogo.png'
@@ -90,7 +90,7 @@ const Projects: React.FC<ProjectsProps> = ({ handleLink }) => {
                 <div className='flex items-center m-2 w-[25px] md:w-[30px] lg:w-[45px] rounded shadow-lg shadow-grey-400 cursor-pointer hover:scale-105 ease-in duration-300'>
                   <Image
                     alt='/'
-                    src={Reactlogo}
+                    src={ReactLogo}
                   />
                   <h3 className='pl-2'>ReactJS</h3>
                 </div>
@@ -157,7 +157,7 @@ const Projects: React.FC<ProjectsProps> = ({ handleLink }) => {
                 <div className='flex items-center m-2 w-[25px] md:w-[30px] lg:w-[45px] rounded shadow-lg shadow-grey-400 cursor-pointer hover:scale-105 ease-in duration-300'>
                   <Image
                     alt='/'
-                    src={Reactlogo}
+                    src={ReactLogo}
                   />
                   <h3 className='pl-2'>React Native</h3>
                 </div>
