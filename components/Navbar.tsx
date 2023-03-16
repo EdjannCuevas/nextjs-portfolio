@@ -40,19 +40,19 @@ const Navbar: React.FC<NavBarProps> = ({ handleLink }) => {
             <div>
                 <ul className='hidden md:flex'>
                     <Link className='scroll-false' href='/'>
-                        <li className='ml-10 text-sm uppercase hover:border-b'>Home</li>
+                        <li className='ml-10 text-lg uppercase hover:border-b'>Home</li>
                     </Link>
                     <Link className='scroll-false' href='/#about'>
-                        <li className='ml-10 text-sm uppercase hover:border-b'>About</li>
+                        <li className='ml-10 text-lg uppercase hover:border-b'>About</li>
                     </Link>
                     <Link className='scroll-false' href='/#skills'>
-                        <li className='ml-10 text-sm uppercase hover:border-b'>Skills</li>
+                        <li className='ml-10 text-lg uppercase hover:border-b'>Skills</li>
                     </Link>
                     <Link className='scroll-false' href='/#projects'>
-                        <li className='ml-10 text-sm uppercase hover:border-b'>Projects</li>
+                        <li className='ml-10 text-lg uppercase hover:border-b'>Projects</li>
                     </Link>
                     <Link className='scroll-false' href='/#contact'>
-                        <li className='ml-10 text-sm uppercase hover:border-b'>Contact</li>
+                        <li className='ml-10 text-lg uppercase hover:border-b'>Contact</li>
                     </Link>
                 </ul>
                 <div onClick={handleNav} className='md:hidden cursor-pointer'>
