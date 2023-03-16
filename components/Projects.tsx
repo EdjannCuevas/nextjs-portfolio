@@ -33,15 +33,15 @@ const Projects: React.FC<ProjectsProps> = ({ handleLink }) => {
               <h2 className='py-4'>
                 Pantry
               </h2>
-              <div className='text-2xl rounded p-1 m-2 bg-[#45a7fd] text-white hover:scale-110 ease-in duration-300 cursor-pointer'>
+              <div className='rounded p-1 m-2 bg-[#45a7fd] text-white hover:scale-105 ease-in duration-300 cursor-pointer'>
                 <FiLink
-                  size={35}
+                  size={20}
                   onClick={() => handleLink('https://pantry.herokuapp.com/')}
                 />
               </div>
-              <div className='text-2xl rounded p-1 m-2 bg-[#45a7fd] text-white hover:scale-110 ease-in duration-300 cursor-pointer'>
+              <div className='rounded p-1 m-2 bg-[#45a7fd] text-white hover:scale-105 ease-in duration-300 cursor-pointer'>
                 <FiGithub
-                  size={35}
+                  size={20}
                   onClick={() => handleLink('https://github.com/EdjannCuevas/pantry-app')}
                 />
               </div>
@@ -97,7 +97,7 @@ const Projects: React.FC<ProjectsProps> = ({ handleLink }) => {
               </div>
             </div>
           </div>
-          <div className='col-span-2 md:pt-5 lg:pt-8'>
+          <div className='flex justify-center items-center col-span-2 md:pt-5 lg:pt-8'>
             <Pantry handleLink={handleLink}/>
           </div>
         </div>
@@ -107,15 +107,15 @@ const Projects: React.FC<ProjectsProps> = ({ handleLink }) => {
               <h2 className='py-4'>
                 Book X Change
               </h2>
-              <div className='text-2xl rounded p-1 m-2 bg-[#45a7fd] text-white hover:scale-110 ease-in duration-300 cursor-pointer'>
+              <div className='rounded p-1 m-2 bg-[#45a7fd] text-white hover:scale-105 ease-in duration-300 cursor-pointer'>
                 <FiLink
-                  size={35}
+                  size={20}
                   onClick={() => handleLink('https://www.youtube.com/watch?v=f1bMJRe4qgs&t=26s')}
                 />
               </div>
-              <div className='text-2xl rounded p-1 m-2 bg-[#45a7fd] text-white hover:scale-110 ease-in duration-300 cursor-pointer'>
+              <div className='rounded p-1 m-2 bg-[#45a7fd] text-white hover:scale-105 ease-in duration-300 cursor-pointer'>
                 <FiGithub
-                  size={35}
+                  size={20}
                   onClick={() => handleLink('https://github.com/Binder-team')}
                 />
               </div>
@@ -164,7 +164,7 @@ const Projects: React.FC<ProjectsProps> = ({ handleLink }) => {
               </div>
             </div>
           </div>
-          <div className='col-span-2 md:pt-5 lg:pt-8'>
+          <div className='flex justify-center items-center col-span-2 md:pt-5 lg:pt-8'>
             <BookXChange handleLink={handleLink}/>
           </div>
         </div>
