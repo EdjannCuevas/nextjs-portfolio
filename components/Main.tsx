@@ -29,15 +29,15 @@ const Main: React.FC<MainProps> = ({ handleLink }) => {
                     <div
                         onClick={() => handleLink('https://www.linkedin.com/in/edgardo-cuevas-979311255/')}
                         className='rounded shadow-lg shadow-grey-400 bg-[#46a8fd] p-7 cursor-pointer hover:scale-125 text-xl ease-in duration-300'>
-                        <FaLinkedinIn />
+                        <FaLinkedinIn className='text-white'/>
                     </div>
                     <div
                         onClick={() => handleLink('https://github.com/EdjannCuevas')}
                         className='rounded shadow-lg shadow-grey-400 bg-[#46a8fd] p-7 cursor-pointer hover:scale-125 text-xl ease-in duration-300'>
-                        <FaGithub />
+                        <FaGithub className='text-white'/>
                     </div>
                     <Link href='/#contact' className='rounded shadow-lg shadow-grey-400 bg-[#46a8fd] p-7 cursor-pointer hover:scale-125 text-xl ease-in duration-300'>
-                        <AiOutlineMail />
+                        <AiOutlineMail className='text-white' />
                     </Link>
                 </div>
             </div>
