@@ -8,7 +8,7 @@ import Projects from '../components/Projects'
 import Contact from '../components/Contact'
 
 export default function Home() {
-  const [darkMode, setDarkMode] = React.useState(true);
+  const [darkMode, setDarkMode] = React.useState(false);
 
   const handleLink = (url: string) => {
     window.open(url, '_blank', 'noopener,noreferrer');
@@ -28,7 +28,7 @@ export default function Home() {
       <Navbar toggleDarkMode={toggleDarkMode} darkMode={darkMode} handleLink={handleLink}/>
       <Main handleLink={handleLink}/>
       <About />
-      <Skills />
+      <Skills handleLink={handleLink}/>
       <Projects handleLink={handleLink}/>
       <Contact handleLink={handleLink}/>
     </div>
