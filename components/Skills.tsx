@@ -66,7 +66,7 @@ const Skills: React.FC<SkillsProps> = ({ handleLink }) => {
     }
     handleDisplayRepo();
   },[
-    java,
+    javascript,
     html,
     css,
     firebase,
