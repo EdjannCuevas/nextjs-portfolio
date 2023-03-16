@@ -28,15 +28,15 @@ const Main: React.FC<MainProps> = ({ handleLink }) => {
                 <div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
                     <div
                         onClick={() => handleLink('https://www.linkedin.com/in/edgardo-cuevas-979311255/')}
-                        className='rounded shadow-lg shadow-grey-400 p-6 cursor-pointer hover:scale-125 ease-in duration-300'>
+                        className='rounded shadow-lg shadow-grey-400 bg-[#46a8fd] p-7 cursor-pointer hover:scale-125 text-xl ease-in duration-300'>
                         <FaLinkedinIn />
                     </div>
                     <div
                         onClick={() => handleLink('https://github.com/EdjannCuevas')}
-                        className='rounded shadow-lg shadow-grey-400 p-6 cursor-pointer hover:scale-125 ease-in duration-300'>
+                        className='rounded shadow-lg shadow-grey-400 bg-[#46a8fd] p-7 cursor-pointer hover:scale-125 text-xl ease-in duration-300'>
                         <FaGithub />
                     </div>
-                    <Link href='/#contact' className='rounded shadow-lg shadow-grey-400 p-6 cursor-pointer hover:scale-125 ease-in duration-300'>
+                    <Link href='/#contact' className='rounded shadow-lg shadow-grey-400 bg-[#46a8fd] p-7 cursor-pointer hover:scale-125 text-xl ease-in duration-300'>
                         <AiOutlineMail />
                     </Link>
                 </div>
