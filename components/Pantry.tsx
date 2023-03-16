@@ -34,7 +34,7 @@ const Pantry: React.FC<PantryProps> = ({ handleLink }) => {
     }
 
     return (
-        <div className='h-[203px] w-[360px] md:h-[250px] md:w-[450px] lg:h-[370px] lg:w-[670px] m-auto relative group'>
+        <div className='h-[172px] w-[315px] md:h-[250px] md:w-[450px] lg:h-[370px] lg:w-[670px] m-auto relative group'>
             <div
                 style={{backgroundImage: `url(${slides[currentIndex]})`}}
                 className='w-full h-full rounded-2xl bg-cover bg-center shadow-lg hover:scale-95 ease-in duration-500'

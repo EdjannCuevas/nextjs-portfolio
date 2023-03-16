@@ -10,7 +10,7 @@ interface BookXChangeProps {
 const Pantry: React.FC<BookXChangeProps> = ({ handleLink }) => {
 
     return (
-        <div className='h-[203px] w-[360px] md:h-[250px] md:w-[450px] lg:h-[370px] lg:w-[670px] m-auto relative group'>
+        <div className='h-[172px] w-[315px] md:h-[250px] md:w-[450px] lg:h-[370px] lg:w-[670px] m-auto relative group'>
             <div className="aspect-w-16 aspect-h-9">
                 <iframe
                     src="https://www.youtube.com/embed/f1bMJRe4qgs?start=26"
