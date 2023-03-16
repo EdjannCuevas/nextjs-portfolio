@@ -30,13 +30,15 @@ const Navbar: React.FC<NavBarProps> = ({ handleLink }) => {
   return (
     <div className={shadow ? 'fixed w-full h-20 shadow-xl bg-[#ecf0f3] z-[100]' : 'fixed w-full h-20 z-[100]'}>
         <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
-            <Image
-                src={logo}
-                alt='/logo'
-                width='90'
-                height='25'
-                unoptimized
-            />
+            <Link className='scroll-false' href='/'>
+                <Image
+                    src={logo}
+                    alt='/logo'
+                    width='90'
+                    height='25'
+                    unoptimized
+                />
+            </Link>
             <div>
                 <ul className='hidden md:flex'>
                     <Link className='scroll-false' href='/'>
