@@ -97,7 +97,7 @@ const Projects: React.FC<ProjectsProps> = ({ handleLink }) => {
               </div>
             </div>
           </div>
-          <div className='flex justify-center items-center col-span-2 md:pt-5 lg:pt-8'>
+          <div className='col-span-2 md:pt-5 lg:pt-8'>
             <Pantry handleLink={handleLink}/>
           </div>
         </div>
@@ -164,7 +164,7 @@ const Projects: React.FC<ProjectsProps> = ({ handleLink }) => {
               </div>
             </div>
           </div>
-          <div className='flex justify-center items-center col-span-2 md:pt-5 lg:pt-8'>
+          <div className='col-span-2 md:pt-5 lg:pt-8'>
             <BookXChange handleLink={handleLink}/>
           </div>
         </div>

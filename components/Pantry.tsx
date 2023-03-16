@@ -34,10 +34,10 @@ const Pantry: React.FC<PantryProps> = ({ handleLink }) => {
     }
 
     return (
-        <div className='h-[172px] w-[315px] md:h-[250px] md:w-[450px] lg:h-[370px] lg:w-[670px] m-auto relative group'>
+        <div className='h-[172px] w-[315px] md:h-[250px] md:w-[450px] lg:h-[390px] lg:w-[708px] m-auto relative group'>
             <div
                 style={{backgroundImage: `url(${slides[currentIndex]})`}}
-                className='w-full h-full rounded-2xl bg-cover bg-center shadow-lg hover:scale-95 ease-in duration-500'
+                className='w-full h-full rounded bg-cover bg-center shadow-lg hover:scale-95 ease-in duration-500'
             >
                 <div className='hidden group-hover:block absolute top-[50%] -translate-x-8 translate-y-[-50%] text-2xl rounded-full p-2 bg-black/30 text-white hover:scale-110 ease-in duration-300 cursor-pointer'>
                     <BsChevronCompactLeft 
