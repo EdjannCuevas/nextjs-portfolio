@@ -6,16 +6,13 @@ const About = () => {
   return (
     <div
       id='about'
-      className='w-full md:h-screen p-4 flex items-center py-20'
+      className='w-full h-auto p-4 flex items-center py-20'
     >
         <div className='max-w-[1240px] m-auto md:grid grid-cols-3 gap-8'>
             <div className='col-span-2'>
-              <p className='text-xl tracking-widest uppercase text-[#46a8fd]'>
+              <p className='text-xl tracking-widest uppercase py-4 text-[#46a8fd]'>
                 About
               </p>
-              <h2 className='py-4'>
-                Who I am
-              </h2>
               <div className='w-full justify-center items-center'>
                 <p>
                   Hello! My name is <span className='text-[#46a8fd]'>Edgardo Cuevas</span>, and I'm a <span className='text-[#46a8fd]'>Software Developer</span> based in Kanagawa. I'm passionate about building high-quality software that makes people's lives easier and more enjoyable.
