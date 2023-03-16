@@ -61,7 +61,7 @@ const Repositories: React.FC<RepositoriesProps> = ({ pantry, portfolio, binderCl
     },[pantry, portfolio, binderClient, binderServer]);
 
     return (
-        <div className='grid grid-cols-2 py-4 m-4'>
+        <div className='grid grid-cols-2 py-4 border-2 shadow-lg h-700'>
             {result}
         </div>
     )
