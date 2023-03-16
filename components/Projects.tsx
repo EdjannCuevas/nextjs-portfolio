@@ -9,7 +9,7 @@ import Node from '../public/images/skills/node.png'
 import Reactlogo from '../public/images/skills/react.png'
 import Postgres from '../public/images/skills/postgres.png'
 import Typescript from '../public/images/skills/typescript.png'
-import Java from '../public/images/skills/java.png'
+import JavaLogo from '../public/images/skills/javalogo.png'
 import { FiLink, FiGithub } from 'react-icons/fi'
 
 interface ProjectsProps {
@@ -129,7 +129,7 @@ const Projects: React.FC<ProjectsProps> = ({ handleLink }) => {
                 <div className='flex items-center m-2 w-[25px] md:w-[30px] lg:w-[45px] rounded shadow-lg shadow-grey-400 cursor-pointer hover:scale-105 ease-in duration-300'>
                   <Image
                     alt='/'
-                    src={Java}
+                    src={JavaLogo}
                   />
                   <h3 className='pl-2'>Java</h3>
                 </div>
