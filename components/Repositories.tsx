@@ -41,10 +41,12 @@ const Repositories: React.FC<RepositoriesProps> = ({ pantry, portfolio, binderCl
             const displayRepos = trueKeys.map((key:string) => {
                 const label = repos[key][0];
                 const url= repos[key][1];
-                return <div
-                onClick={() => handleLink(url)}
-                className='p-4 m-4 rounded-xl hover:scale-105 ease-in duration-300 shadow-xl border-2 cursor-pointer'
-                >
+                return (
+                    <div
+                        key={key}
+                        onClick={() => handleLink(url)}
+                        className='p-4 m-4 rounded-xl hover:scale-105 ease-in duration-300 shadow-xl border-2 cursor-pointer'
+                    >
                     <div className='grid grid-cols-2 gap-4 justify-center items-center text-xl'>
                         <div className='m-auto text-4xl'>
                             <BsGithub />
@@ -53,7 +55,7 @@ const Repositories: React.FC<RepositoriesProps> = ({ pantry, portfolio, binderCl
                             <h3>{label}</h3>
                         </div>
                     </div>
-              </div>
+              </div>)
             })
             setResult(displayRepos);
         }
