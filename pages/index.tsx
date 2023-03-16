@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Ed | Front End Developer</title>
+        <title>Ed | Developer</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href={"/favicon.ico"} />
       </Head>
