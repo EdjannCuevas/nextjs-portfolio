@@ -34,7 +34,7 @@ const Pantry: React.FC<PantryProps> = ({ handleLink }) => {
     }
 
     return (
-        <div className='h-[203px] w-[360px] md:h-[250px] md:w-[450px] lg:h-[390px] lg:w-[720px] m-auto relative group'>
+        <div className='h-[203px] w-[360px] md:h-[250px] md:w-[450px] lg:h-[370px] lg:w-[670px] m-auto relative group'>
             <div
                 style={{backgroundImage: `url(${slides[currentIndex]})`}}
                 className='w-full h-full rounded-2xl bg-cover bg-center shadow-lg hover:scale-95 ease-in duration-500'
@@ -49,23 +49,13 @@ const Pantry: React.FC<PantryProps> = ({ handleLink }) => {
                         size={30}
                         onClick={nextSlide} />
                 </div>
-                <div className='hidden group-hover:block absolute top-[-12%]  text-2xl rounded p-1 bg-black/30 text-white hover:scale-110 ease-in duration-300 cursor-pointer'>
-                    <FiLink
-                        size={35}
-                        onClick={() => handleLink('https://pantry.herokuapp.com/')} />
-                </div>
-                <div className='hidden group-hover:block absolute top-[-12%] -translate-x-[-110%] text-2xl rounded p-1 bg-black/30 text-white hover:scale-110 ease-in duration-300 cursor-pointer'>
-                    <FiGithub
-                        size={35}
-                        onClick={() => handleLink('https://github.com/EdjannCuevas/pantry-app')} />
-                </div>
             </div>
-            <div className='flex top-4 justify-center py-2'>
+            <div className=' flex top-4 justify-center py-2'>
                 {slides.map((slide, slideIndex) => {
                     return <div
                         key={slideIndex}
                         onClick={() => goToSlide(slideIndex)}
-                        className='text-xl cursor-pointer'>
+                        className='text-xs md:text-xl cursor-pointer'>
                         <RxDotFilled/>
                     </div>
                 })}
