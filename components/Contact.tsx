@@ -19,7 +19,7 @@ const Contact: React.FC<ContactProps> = ({ handleLink }) => {
 
   const { values } = state;
   
-  const handleChange = ({ target }) => setState((prev) => ({
+  const handleChange = ({ target }: any) => setState((prev) => ({
     ...prev,
     values: {
       ...prev.values,
