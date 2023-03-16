@@ -24,7 +24,7 @@ export default function Home() {
       <Main handleLink={handleLink}/>
       <About />
       <Skills />
-      <Projects />
+      <Projects handleLink={handleLink}/>
       <Contact handleLink={handleLink}/>
     </div>
   )
