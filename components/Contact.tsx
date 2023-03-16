@@ -38,7 +38,7 @@ const Contact: React.FC<ContactProps> = ({ handleLink }) => {
 
   return (
     <div id='contact' className='w-full md:h-screen p-5 flex items-center py-20'>
-        <div className='w-full m-auto flex items-center justify-center'>
+        <div className='w-full m-auto flex items-center justify-center pt-4'>
             <div className='w-full md:w-[1240] lg:w-[1240px] border-2 rounded p-5 shadow-lg'>
               <div className='flex flex-row justify-between '>
                 <h2 className='py-4'>Get In Touch!</h2>
@@ -95,7 +95,7 @@ const Contact: React.FC<ContactProps> = ({ handleLink }) => {
                     <label className='uppercase text-sm py-3'>Message <span className='text-red-500'>*</span></label>
                     <textarea
                       className='border-2 rounded-lg p-3 flex border-gray-300'
-                      rows={5}
+                      rows={2}
                       value={values.message}
                       name='message'
                       onChange={handleChange}
