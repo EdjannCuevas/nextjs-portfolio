@@ -69,12 +69,17 @@ const Navbar: React.FC<NavBarProps> = ({ handleLink }) => {
         }>
             <div>
                 <div className='flex w-full items-center justify-between'>
-                    <Image
-                        src={logo}
-                        width='87'
-                        height='35'
-                        alt='/logo'
-                    />
+                    <Link
+                        className='scroll-false'
+                        onClick={handleNav}
+                        href='/'>
+                        <Image
+                            src={logo}
+                            width='87'
+                            height='35'
+                            alt='/logo'
+                        />
+                    </Link>
                     <div onClick={handleNav} className='rounded-full shadow-lg shadow-grey-400 p-3 cursor-pointer'>
                         <AiOutlineClose/>
                     </div>
