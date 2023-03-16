@@ -5,7 +5,6 @@ import About from '../components/About'
 import Skills from '../components/Skills'
 import Projects from '../components/Projects'
 import Contact from '../components/Contact'
-import Logo from '../public/images/navLogo.png'
 
 export default function Home() {
 
@@ -18,7 +17,7 @@ export default function Home() {
       <Head>
         <title>Ed | Front End Developer</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href={"/favicon.ico"} />
       </Head>
       <Navbar handleLink={handleLink}/>
       <Main handleLink={handleLink}/>
