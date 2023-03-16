@@ -15,6 +15,7 @@ import Typescript from '../public/images/skills/typescript.png'
 import JavaLogo from '../public/images/skills/javaLogo.png'
 import Spring from '../public/images/skills/spring.png'
 import Repositories from './Repositories'
+import { GrPowerReset } from 'react-icons/gr'
 
 interface SkillsProps {
   handleLink: (arg: string) => void;
@@ -80,7 +81,24 @@ const Skills: React.FC<SkillsProps> = ({ handleLink }) => {
     java,
     reactNative,
     spring,
-  ])
+  ]);
+
+  const allFalse = (
+  !java &&
+  !html &&
+  !css &&
+  !firebase &&
+  !github &&
+  !materialUI &&
+  !react &&
+  !tailwind &&
+  !typescript &&
+  !node &&
+  !postgres &&
+  !nextJs &&
+  !java &&
+  !reactNative &&
+  !spring);
 
   const handleReset = () => {
     setJavascript(false);
@@ -97,7 +115,8 @@ const Skills: React.FC<SkillsProps> = ({ handleLink }) => {
     setNextJs(false);
     setJava(false);
     setReactNative(false);
-  }
+    setSpring(false);
+  };
   
   const handleHtml = () => {
     setHtml(!html);
@@ -163,7 +182,12 @@ const Skills: React.FC<SkillsProps> = ({ handleLink }) => {
   return (
     <div id='skills' className='w-full lg:h-auto p-4 py-20'>
         <div className='max-w-[1240px] mx-auto flex-col justify-center h-full'>
-          <p className='text-xl tracking-widest uppercase text-[#46a8fd]'>Skills</p>
+          <p className='text-xl tracking-widest uppercase text-[#46a8fd]'>
+            Skills
+          </p>
+          <p className='uppercase text-xs py-4 tracking-widest'>
+            Tap any tech to access the Github Repositories below
+          </p>
           <div className='grid grid-cols-2 lg:grid-cols-4 py-4 gap-8'>
             <div
               onClick={handleHtml}
@@ -435,8 +459,24 @@ const Skills: React.FC<SkillsProps> = ({ handleLink }) => {
                 </div>
               </div>
             </div>
+            <div
+              onClick={() => handleReset()}
+              className={`p-6 rounded-xl ${(pantry || portfolio || binderClient || binderServer) || allFalse ? '' : 'hover:scale-105 ease-in duration-300 shadow-xl border-2 border-red-500'} cursor-pointer`}
+            >
+              <div className='grid grid-cols-2 gap-4 justify-center items-center'>
+                <div className='m-auto text-3xl'>
+                  <GrPowerReset/>
+                </div>
+                <div className='flex flex-col items-center justify-center'>
+                  <h3>Reset Skills</h3>
+                </div>
+              </div>
+            </div>
           </div>
-          <div className='w-full h-auto'>
+          <div className='w-auto h-auto'>
+          <p className='uppercase text-xs py-9 tracking-widest'>
+            Github Repositories:
+          </p>
             <Repositories pantry={pantry} portfolio={portfolio} binderClient={binderClient} binderServer={binderServer} handleLink={handleLink} />
           </div>
         </div>
