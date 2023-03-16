@@ -9,7 +9,7 @@ import Node from '../public/images/skills/node.png'
 import ReactLogo from '../public/images/skills/react.png'
 import Postgres from '../public/images/skills/postgres.png'
 import Typescript from '../public/images/skills/typescript.png'
-import JavaLogo from '../public/images/skills/javaLogo.png'
+import JavaLogo from '../public/images/skills/javalogo.png'
 import { FiLink, FiGithub } from 'react-icons/fi'
 
 interface ProjectsProps {
