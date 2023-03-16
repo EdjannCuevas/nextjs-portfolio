@@ -33,13 +33,13 @@ const Projects: React.FC<ProjectsProps> = ({ handleLink }) => {
               <h2 className='py-4'>
                 Pantry
               </h2>
-              <div className='text-2xl rounded p-1 m-2 bg-black/30 text-white hover:scale-110 ease-in duration-300 cursor-pointer'>
+              <div className='text-2xl rounded p-1 m-2 bg-[#45a7fd] text-white hover:scale-110 ease-in duration-300 cursor-pointer'>
                 <FiLink
                   size={35}
                   onClick={() => handleLink('https://pantry.herokuapp.com/')}
                 />
               </div>
-              <div className='text-2xl rounded p-1 m-2 bg-black/30 text-white hover:scale-110 ease-in duration-300 cursor-pointer'>
+              <div className='text-2xl rounded p-1 m-2 bg-[#45a7fd] text-white hover:scale-110 ease-in duration-300 cursor-pointer'>
                 <FiGithub
                   size={35}
                   onClick={() => handleLink('https://github.com/EdjannCuevas/pantry-app')}
@@ -107,13 +107,13 @@ const Projects: React.FC<ProjectsProps> = ({ handleLink }) => {
               <h2 className='py-4'>
                 Book X Change
               </h2>
-              <div className='text-2xl rounded p-1 m-2 bg-black/30 text-white hover:scale-110 ease-in duration-300 cursor-pointer'>
+              <div className='text-2xl rounded p-1 m-2 bg-[#45a7fd] text-white hover:scale-110 ease-in duration-300 cursor-pointer'>
                 <FiLink
                   size={35}
                   onClick={() => handleLink('https://www.youtube.com/watch?v=f1bMJRe4qgs&t=26s')}
                 />
               </div>
-              <div className='text-2xl rounded p-1 m-2 bg-black/30 text-white hover:scale-110 ease-in duration-300 cursor-pointer'>
+              <div className='text-2xl rounded p-1 m-2 bg-[#45a7fd] text-white hover:scale-110 ease-in duration-300 cursor-pointer'>
                 <FiGithub
                   size={35}
                   onClick={() => handleLink('https://github.com/Binder-team')}
