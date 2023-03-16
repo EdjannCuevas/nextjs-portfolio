@@ -8,8 +8,17 @@ html {
 
 @layer base {
 
+  .dark {
+    @apply bg-gray-800 text-zinc-50
+  }
+
+  
+  .light {
+    @apply bg-[#ecf0f3]  text-[#1f2937]
+  }
+
   body {
-    @apply bg-[#ecf0f3] text-[#1f2937] tracking-wide
+    @apply tracking-wide
   }
 
   p {

@@ -2,16 +2,19 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React, { useState, useEffect } from 'react'
 import { AiOutlineClose, AiOutlineMenu, AiOutlineMail } from 'react-icons/ai'
-import { FaLinkedinIn, FaGithub } from 'react-icons/fa'
+import { BsLinkedin, BsGithub, BsToggleOn, BsToggleOff } from 'react-icons/bs'
 import logo from 'public/images/navLogo.png'
 
 interface NavBarProps {
-    handleLink: (arg: string) => void
+    handleLink: (arg: string) => void,
+    toggleDarkMode: () => void,
+    darkMode: boolean,
 }
 
-const Navbar: React.FC<NavBarProps> = ({ handleLink }) => {
+const Navbar: React.FC<NavBarProps> = ({ handleLink, toggleDarkMode, darkMode }) => {
     const [nav, setNav] = useState(false);
     const [shadow, setShadow] = useState(false);
+
 
     useEffect(() => {
         const handleShadow = () => {
@@ -21,14 +24,14 @@ const Navbar: React.FC<NavBarProps> = ({ handleLink }) => {
             else setShadow(false);
         };
         window.addEventListener('scroll', handleShadow);
-    },[])
+    },[]);
 
     const handleNav = () => {
         setNav(!nav);
     }
 
   return (
-    <div className={shadow ? 'fixed w-full h-20 shadow-xl bg-[#ecf0f3] z-[100]' : 'fixed w-full h-20 z-[100]'}>
+    <div className={shadow ? `fixed w-full h-20 shadow-xl z-[100] ${darkMode ? 'dark' : 'light'}` : `fixed w-full h-20 z-[100] ${darkMode ? 'dark' : ''}`}>
         <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
             <Link className='scroll-false' href='/'>
                 <Image
@@ -39,32 +42,38 @@ const Navbar: React.FC<NavBarProps> = ({ handleLink }) => {
                     unoptimized
                 />
             </Link>
-            <div>
-                <ul className='hidden md:flex'>
-                    <Link className='scroll-false' href='/'>
-                        <li className='ml-10 text-lg uppercase hover:border-b'>Home</li>
-                    </Link>
-                    <Link className='scroll-false' href='/#about'>
-                        <li className='ml-10 text-lg uppercase hover:border-b'>About</li>
-                    </Link>
-                    <Link className='scroll-false' href='/#skills'>
-                        <li className='ml-10 text-lg uppercase hover:border-b'>Skills</li>
-                    </Link>
-                    <Link className='scroll-false' href='/#projects'>
-                        <li className='ml-10 text-lg uppercase hover:border-b'>Projects</li>
-                    </Link>
-                    <Link className='scroll-false' href='/#contact'>
-                        <li className='ml-10 text-lg uppercase hover:border-b'>Contact</li>
-                    </Link>
-                </ul>
-                <div onClick={handleNav} className='md:hidden cursor-pointer'>
-                    <AiOutlineMenu size={25}/>
+        <div>
+            <ul className='hidden md:flex'>
+                <Link className='scroll-false' href='/'>
+                    <li className='ml-10 text-lg uppercase hover:border-b'>Home</li>
+                </Link>
+                <Link className='scroll-false' href='/#about'>
+                    <li className='ml-10 text-lg uppercase hover:border-b'>About</li>
+                </Link>
+                <Link className='scroll-false' href='/#skills'>
+                    <li className='ml-10 text-lg uppercase hover:border-b'>Skills</li>
+                </Link>
+                <Link className='scroll-false' href='/#projects'>
+                    <li className='ml-10 text-lg uppercase hover:border-b'>Projects</li>
+                </Link>
+                <Link className='scroll-false' href='/#contact'>
+                    <li className='ml-10 text-lg uppercase hover:border-b'>Contact</li>
+                </Link>
+                <div
+                    className="absolute top-[110px] right-10 text-3xl cursor-pointer hover:scale-110 ease-in duration-200"
+                    onClick={toggleDarkMode}
+                >
+                    {darkMode ? <BsToggleOff /> : <BsToggleOn/>}
                 </div>
+            </ul>
+            <div onClick={handleNav} className='md:hidden cursor-pointer'>
+                <AiOutlineMenu size={25}/>
             </div>
         </div>
+    </div>
     <div className={nav ? 'md:hidden fixed left-0 top-0 w-full h-screen bg-black/70': ''}>
         <div className={nav
-            ? 'fixed left-0 top-0 w-[75%] sm:w=[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500'
+            ? `fixed left-0 top-0 w-[75%] sm:w=[60%] md:w-[45%] h-screen p-10 ease-in duration-500 ${darkMode ? 'dark' : 'light'}`
             : 'fixed left-[-100%] top-0 p-10 ease-in duration-500'
         }>
             <div>
@@ -90,6 +99,12 @@ const Navbar: React.FC<NavBarProps> = ({ handleLink }) => {
             </div>
             <div className='py-4 flex-col'>
                 <ul className='uppercase'>
+                    <div
+                        className="absolute top-[110px] right-11 text-3xl cursor-pointer hover:scale-110 ease-in duration-200"
+                        onClick={toggleDarkMode}
+                    >
+                        {darkMode ? <BsToggleOff /> : <BsToggleOn/>}
+                    </div>
                     <Link className='hover:scale-200 ease-in duration-300' onClick={() => setNav(false)} href='/'>
                         <li className='py-4 text-sm'>Home</li>
                     </Link>
@@ -114,12 +129,12 @@ const Navbar: React.FC<NavBarProps> = ({ handleLink }) => {
                         <div
                             onClick={() => handleLink('https://www.linkedin.com/in/edgardo-cuevas-979311255/')}
                             className='rounded-full shadow-lg shadow-grey-400 p-3 cursor-pointer hover:scale-125 ease-in duration-300'>
-                            <FaLinkedinIn />
+                            <BsLinkedin />
                         </div>
                         <div
                             onClick={() => handleLink('https://github.com/EdjannCuevas')}
                             className='rounded-full shadow-lg shadow-grey-400 p-3 cursor-pointer hover:scale-125 ease-in duration-300'>
-                            <FaGithub />
+                            <BsGithub />
                         </div>
                         <Link
                             href='/#contact'
