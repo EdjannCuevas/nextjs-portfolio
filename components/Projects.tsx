@@ -27,7 +27,7 @@ const Projects: React.FC<ProjectsProps> = ({ handleLink }) => {
         <p className='text-xl tracking-widest uppercase text-[#46a8fd]'>
           Projects
         </p>
-        <div className='max-w-[1240px] mx-auto flex flex-col-reverse md:grid lg:grid grid-cols-3 m-4 p-4 gap-2 border-4 rounded shadow-lg'>
+        <div className='max-w-[1240px] mx-auto flex flex-col-reverse md:grid lg:grid grid-cols-3 m-4 p-4 mt-5 gap-2 border-4 rounded shadow-lg'>
           <div className='col-span-1'>
             <div className='flex justify-start items-center'>
               <h2 className='py-4'>
@@ -101,7 +101,7 @@ const Projects: React.FC<ProjectsProps> = ({ handleLink }) => {
             <Pantry handleLink={handleLink}/>
           </div>
         </div>
-        <div className='max-w-[1240px] mx-auto flex flex-col-reverse md:grid lg:grid grid-cols-3 m-4 p-4 gap-2 border-4 rounded shadow-lg'>
+        <div className='max-w-[1240px] mx-auto flex flex-col-reverse md:grid lg:grid grid-cols-3 m-4 p-4 mt-10 gap-2 border-4 rounded shadow-lg'>
           <div className='col-span-1'>
           <div className='flex justify-start items-center'>
               <h2 className='py-4'>
