@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { FaLinkedinIn, FaGithub } from 'react-icons/fa'
 import { sendContactForm } from '../lib/api'
 
@@ -12,10 +12,17 @@ const initValues = {
   subject: '',
   message: '',
 }
+
 const initState = {values: initValues};
 
 const Contact: React.FC<ContactProps> = ({ handleLink }) => {
   const [state, setState] = useState(initState);
+  const [hasEmpty, setHasEmpty] = useState(true);
+
+  useEffect(() => {
+    const hasEmptyValue = Object.values(state.values).some((value) => value === '');
+    setHasEmpty(hasEmptyValue);
+  },[state]);
 
   const { values } = state;
   
@@ -102,7 +109,7 @@ const Contact: React.FC<ContactProps> = ({ handleLink }) => {
                     />
                   </div>
                 </div>
-                <button className='w-full p-5 mt-5'>Send Message</button>
+                <button disabled={hasEmpty} className={`rounded-xl shadow-lg w-full p-5 mt-5 ${hasEmpty ? 'cursor-not-allowed bg-gray-400' : 'bg-[#46a8fd]'}`}>Send Message</button>
               </form>
             </div>
         </div>
