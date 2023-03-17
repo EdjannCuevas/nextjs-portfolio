@@ -47,14 +47,14 @@ const Navbar: React.FC<NavBarProps> = ({ handleLink, toggleDarkMode, darkMode })
                 <Link className='scroll-false' href='/'>
                     <li className='ml-10 text-lg uppercase hover:border-b'>Home</li>
                 </Link>
-                <Link className='scroll-false' href='/#about'>
-                    <li className='ml-10 text-lg uppercase hover:border-b'>About</li>
-                </Link>
                 <Link className='scroll-false' href='/#skills'>
                     <li className='ml-10 text-lg uppercase hover:border-b'>Skills</li>
                 </Link>
                 <Link className='scroll-false' href='/#projects'>
                     <li className='ml-10 text-lg uppercase hover:border-b'>Projects</li>
+                </Link>
+                <Link className='scroll-false' href='/#about'>
+                    <li className='ml-10 text-lg uppercase hover:border-b'>About</li>
                 </Link>
                 <Link className='scroll-false' href='/#contact'>
                     <li className='ml-10 text-lg uppercase hover:border-b'>Contact</li>
@@ -108,14 +108,14 @@ const Navbar: React.FC<NavBarProps> = ({ handleLink, toggleDarkMode, darkMode })
                     <Link className='hover:scale-200 ease-in duration-300' onClick={() => setNav(false)} href='/'>
                         <li className='py-4 text-sm'>Home</li>
                     </Link>
-                    <Link onClick={() => setNav(false)} href='/#about'>
-                        <li className='py-4 text-sm'>About</li>
-                    </Link>
                     <Link onClick={() => setNav(false)} href='/#skills'>
                         <li className='py-4 text-sm'>Skills</li>
                     </Link>
                     <Link onClick={() => setNav(false)} href='/#projects'>
                         <li className='py-4 text-sm'>Projects</li>
+                    </Link>
+                    <Link onClick={() => setNav(false)} href='/#about'>
+                        <li className='py-4 text-sm'>About</li>
                     </Link>
                     <Link onClick={() => setNav(false)} href='/#contact'>
                         <li className='py-4 text-sm'>Contacts</li>

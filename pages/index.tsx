@@ -27,9 +27,9 @@ export default function Home() {
       </Head>
       <Navbar toggleDarkMode={toggleDarkMode} darkMode={darkMode} handleLink={handleLink}/>
       <Main handleLink={handleLink}/>
-      <About />
       <Skills handleLink={handleLink}/>
       <Projects handleLink={handleLink}/>
+      <About />
       <Contact handleLink={handleLink}/>
     </div>
   )
