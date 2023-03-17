@@ -16,9 +16,9 @@ const Portfolio: React.FC<PortfolioProps> = ({ handleLink, darkMode }) => {
     ];
 
     const darkSlides = [
-        '/images/projects/dark_home.png',
-        '/images/projects/dark_skills.png',
-        '/images/projects/dark_projects.png',
+        '/images/projects/dark-home.png',
+        '/images/projects/dark-skills.png',
+        '/images/projects/dark-projects.png',
     ];
 
     const [currentIndex, setCurrentIndex] = useState(0);
