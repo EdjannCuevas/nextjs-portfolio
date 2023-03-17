@@ -21,10 +21,10 @@ const Repositories: React.FC<RepositoriesProps> = ({ pantry, portfolio, binderCl
     const [result, setResult] = useState<JSX.Element[]  | null>(null);
 
     const repos: Repos = {
-        'pantry': ['EdjannCuevas/pantry-app', 'https://github.com/EdjannCuevas/pantry-app'],
-        'binderClient': ['Binder-team/BookXChangeClient', 'https://github.com/Binder-team/BookXChange-client'],
-        'binderServer': ['Binder-team/BookXChangeServer', 'https://github.com/Binder-team/Binder-server'],
-        'portfolio':['EdjannCuevas/nextjs-portfolio', 'https://github.com/EdjannCuevas/nextjs-portfolio'],
+        'pantry': ['/pantry-app', 'https://github.com/EdjannCuevas/pantry-app'],
+        'binderClient': ['/BookXChangeClient', 'https://github.com/Binder-team/BookXChange-client'],
+        'binderServer': ['/BookXChangeServer', 'https://github.com/Binder-team/Binder-server'],
+        'portfolio':['/nextjs-portfolio', 'https://github.com/EdjannCuevas/nextjs-portfolio'],
     };
 
     useEffect(() => {
@@ -45,9 +45,9 @@ const Repositories: React.FC<RepositoriesProps> = ({ pantry, portfolio, binderCl
                     <div
                         key={key}
                         onClick={() => handleLink(url)}
-                        className='p-4 m-4 rounded-xl hover:scale-105 ease-in duration-300 shadow-xl border-2 cursor-pointer'
+                        className='p-4 m-4 rounded-xl hover:scale-105 ease-in duration-300 shadow-xl border-2 cursor-pointer w-[90%]'
                     >
-                    <div className='grid grid-cols-2 gap-4 justify-center items-center text-xl'>
+                    <div className='grid grid-cols-2 justify-center items-center sm:text-sm lg:text-xl'>
                         <div className='m-auto text-4xl'>
                             <BsGithub />
                         </div>
@@ -63,7 +63,7 @@ const Repositories: React.FC<RepositoriesProps> = ({ pantry, portfolio, binderCl
     },[pantry, portfolio, binderClient, binderServer]);
 
     return (
-        <div className='grid grid-cols-2 py-4 border-2 shadow-lg h-700'>
+        <div className='flex flex-col justify-center items-center lg:grid grid-cols-2 py-4 border-2 shadow-lg h-700'>
             {result}
         </div>
     )

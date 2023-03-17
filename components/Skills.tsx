@@ -193,7 +193,7 @@ const Skills: React.FC<SkillsProps> = ({ handleLink }) => {
               onClick={handleHtml}
               className={`p-6 rounded-xl ${html ? '' : 'hover:scale-105 ease-in duration-300 shadow-xl border-2'} cursor-pointer`}
             >
-              <div className='grid grid-cols-2 gap-4 justify-center items-center'>
+              <div className='grid grid-cols-2 gap-2 justify-center items-center'>
                 <div className='m-auto'>
                   <Image
                     alt='/'
@@ -211,7 +211,7 @@ const Skills: React.FC<SkillsProps> = ({ handleLink }) => {
               onClick={handleCss}
               className={`p-6 rounded-xl ${css ? '' : 'hover:scale-105 ease-in duration-300 shadow-xl border-2'} cursor-pointer`}
             >
-              <div className='grid grid-cols-2 gap-4 justify-center items-center'>
+              <div className='grid grid-cols-2 gap-2 justify-center items-center'>
                 <div className='m-auto'>
                   <Image
                     alt='/'
@@ -229,7 +229,7 @@ const Skills: React.FC<SkillsProps> = ({ handleLink }) => {
               onClick={handleJavascript}
               className={`p-6 rounded-xl ${javascript ? '' : 'hover:scale-105 ease-in duration-300 shadow-xl border-2'} cursor-pointer`}
             >
-              <div className='grid grid-cols-2 gap-4 justify-center items-center'>
+              <div className='grid grid-cols-2 gap-2 justify-center items-center'>
                 <div className='m-auto'>
                   <Image
                     alt='/'
@@ -247,7 +247,7 @@ const Skills: React.FC<SkillsProps> = ({ handleLink }) => {
               onClick={handleNode}
               className={`p-6 rounded-xl ${node ? '' : 'hover:scale-105 ease-in duration-300 shadow-xl border-2'} cursor-pointer`}
             >
-              <div className='grid grid-cols-2 gap-4 justify-center items-center'>
+              <div className='grid grid-cols-2 gap-2 justify-center items-center'>
                 <div className='m-auto'>
                   <Image
                     alt='/'
@@ -265,7 +265,7 @@ const Skills: React.FC<SkillsProps> = ({ handleLink }) => {
               onClick={handleReact}
               className={`p-6 rounded-xl ${react ? '' : 'hover:scale-105 ease-in duration-300 shadow-xl border-2'} cursor-pointer`}
             >
-              <div className='grid grid-cols-2 gap-4 justify-center items-center'>
+              <div className='grid grid-cols-2 gap-2 justify-center items-center'>
                 <div className='m-auto'>
                   <Image
                     alt='/'
@@ -283,7 +283,7 @@ const Skills: React.FC<SkillsProps> = ({ handleLink }) => {
               onClick={handleGithub}
               className={`p-6 rounded-xl ${github ? '' : 'hover:scale-105 ease-in duration-300 shadow-xl border-2'} cursor-pointer`}
             >
-              <div className='grid grid-cols-2 gap-4 justify-center items-center'>
+              <div className='grid grid-cols-2 gap-2 justify-center items-center'>
                 <div className='m-auto'>
                   <Image
                     alt='/'
@@ -301,7 +301,7 @@ const Skills: React.FC<SkillsProps> = ({ handleLink }) => {
               onClick={handleFirebase}
               className={`p-6 rounded-xl ${firebase ? '' : 'hover:scale-105 ease-in duration-300 shadow-xl border-2'} cursor-pointer`}
             >
-              <div className='grid grid-cols-2 gap-4 justify-center items-center'>
+              <div className='grid grid-cols-2 gap-2 justify-center items-center'>
                 <div className='m-auto'>
                   <Image
                     alt='/'
@@ -319,7 +319,7 @@ const Skills: React.FC<SkillsProps> = ({ handleLink }) => {
               onClick={handleMaterialUI}
               className={`p-6 rounded-xl ${materialUI ? '' : 'hover:scale-105 ease-in duration-300 shadow-xl border-2'} cursor-pointer`}
             >
-              <div className='grid grid-cols-2 gap-4 justify-center items-center'>
+              <div className='grid grid-cols-2 gap-2 justify-center items-center'>
                 <div className='m-auto'>
                   <Image
                     alt='/'
@@ -337,7 +337,7 @@ const Skills: React.FC<SkillsProps> = ({ handleLink }) => {
               onClick={handleNextJs}
               className={`p-6 rounded-xl ${nextJs ? '' : 'hover:scale-105 ease-in duration-300 shadow-xl border-2'} cursor-pointer`}
             >
-              <div className='grid grid-cols-2 gap-4 justify-center items-center'>
+              <div className='grid grid-cols-2 gap-2 justify-center items-center'>
                 <div className='m-auto'>
                   <Image
                     alt='/'
@@ -355,7 +355,7 @@ const Skills: React.FC<SkillsProps> = ({ handleLink }) => {
               onClick={handleTailwind}
               className={`p-6 rounded-xl ${tailwind ? '' : 'hover:scale-105 ease-in duration-300 shadow-xl border-2'} cursor-pointer`}
             >
-              <div className='grid grid-cols-2 gap-4 justify-center items-center'>
+              <div className='grid grid-cols-2 gap-2 justify-center items-center'>
                 <div className='m-auto'>
                   <Image
                     alt='/'
@@ -373,7 +373,7 @@ const Skills: React.FC<SkillsProps> = ({ handleLink }) => {
               onClick={handlePostgres}
               className={`p-6 rounded-xl ${postgres ? '' : 'hover:scale-105 ease-in duration-300 shadow-xl border-2'} cursor-pointer`}
             >
-              <div className='grid grid-cols-2 gap-4 justify-center items-center'>
+              <div className='grid grid-cols-2 gap-2 justify-center items-center'>
                 <div className='m-auto'>
                   <Image
                     alt='/'
@@ -391,7 +391,7 @@ const Skills: React.FC<SkillsProps> = ({ handleLink }) => {
               onClick={handleTypescript}
               className={`p-6 rounded-xl ${typescript ? '' : 'hover:scale-105 ease-in duration-300 shadow-xl border-2'} cursor-pointer`}
             >
-              <div className='grid grid-cols-2 gap-4 justify-center items-center'>
+              <div className='grid grid-cols-2 gap-2 justify-center items-center'>
                 <div className='m-auto'>
                   <Image
                     alt='/'
@@ -409,7 +409,7 @@ const Skills: React.FC<SkillsProps> = ({ handleLink }) => {
               onClick={handleJava}
               className={`p-6 rounded-xl ${java ? '' : 'hover:scale-105 ease-in duration-300 shadow-xl border-2'} cursor-pointer`}
             >
-              <div className='grid grid-cols-2 gap-4 justify-center items-center'>
+              <div className='grid grid-cols-2 gap-2 justify-center items-center'>
                 <div className='m-auto'>
                   <Image
                     alt='/'
@@ -427,7 +427,7 @@ const Skills: React.FC<SkillsProps> = ({ handleLink }) => {
               onClick={handleReactNative}
               className={`p-6 rounded-xl ${reactNative ? '' : 'hover:scale-105 ease-in duration-300 shadow-xl border-2'} cursor-pointer`}
             >
-              <div className='grid grid-cols-2 gap-4 justify-center items-center'>
+              <div className='grid grid-cols-2 gap-2 justify-center items-center'>
                 <div className='m-auto'>
                   <Image
                     alt='/'
@@ -445,7 +445,7 @@ const Skills: React.FC<SkillsProps> = ({ handleLink }) => {
               onClick={handleSpring}
               className={`p-6 rounded-xl ${spring ? '' : 'hover:scale-105 ease-in duration-300 shadow-xl border-2'} cursor-pointer`}
             >
-              <div className='grid grid-cols-2 gap-4 justify-center items-center'>
+              <div className='grid grid-cols-2 gap-2 justify-center items-center'>
                 <div className='m-auto'>
                   <Image
                     alt='/'
@@ -463,7 +463,7 @@ const Skills: React.FC<SkillsProps> = ({ handleLink }) => {
               onClick={() => handleReset()}
               className={`p-6 rounded-xl ${(pantry || portfolio || binderClient || binderServer) || allFalse ? '' : 'hover:scale-105 ease-in duration-300 shadow-xl border-2 border-red-500'} cursor-pointer`}
             >
-              <div className='grid grid-cols-2 gap-4 justify-center items-center'>
+              <div className='grid grid-cols-2 gap-2 justify-center items-center'>
                 <div className='m-auto text-3xl'>
                   <GrPowerReset/>
                 </div>
@@ -474,9 +474,9 @@ const Skills: React.FC<SkillsProps> = ({ handleLink }) => {
             </div>
           </div>
           <div className='w-auto h-auto'>
-          <p className='uppercase text-xs py-9 tracking-widest'>
-            Github Repositories:
-          </p>
+            <p className='uppercase text-xs py-9 tracking-widest'>
+              Github Repositories:
+            </p>
             <Repositories pantry={pantry} portfolio={portfolio} binderClient={binderClient} binderServer={binderServer} handleLink={handleLink} />
           </div>
         </div>
