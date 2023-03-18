@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { FaLinkedinIn, FaGithub } from 'react-icons/fa'
 import { sendContactForm } from '../lib/api'
+import Modal from './Modal';
 
 interface ContactProps {
   handleLink: (arg: string) => void;
@@ -18,6 +19,7 @@ const initState = {values: initValues};
 const Contact: React.FC<ContactProps> = ({ handleLink }) => {
   const [state, setState] = useState(initState);
   const [hasEmpty, setHasEmpty] = useState(true);
+  const [messageSent, setMessageSent] = useState(false);
 
   useEffect(() => {
     const hasEmptyValue = Object.values(state.values).some((value) => value === '');
@@ -32,16 +34,16 @@ const Contact: React.FC<ContactProps> = ({ handleLink }) => {
       ...prev.values,
       [target.name]: target.value,
     }
-  }));
+  }))
 
-  const onSubmit = async () => {
-    setState((prev) => ({
-      ...prev,
+  const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    await sendContactForm(values);
+    setState({ values: initValues });
+    setMessageSent(true);
+  };
 
-    }));
-    await sendContactForm(values)
-  }
-
+  const closeModal = () => setMessageSent(false);
 
   return (
     <div
@@ -73,7 +75,7 @@ const Contact: React.FC<ContactProps> = ({ handleLink }) => {
                     <div>
                       <label className='uppercase text-sm py-3'>Name <span className='text-red-500'>*</span></label>
                       <input
-                        className='border-2 rounded-lg p-3 w-[90%] flex border-gray-300'
+                        className='border-2 text-black rounded-lg p-3 w-[90%] flex border-gray-300'
                         type='text'
                         name='name'
                         value={values.name}
@@ -83,7 +85,7 @@ const Contact: React.FC<ContactProps> = ({ handleLink }) => {
                     <div>
                       <label className='uppercase text-sm py-3'>Email <span className='text-red-500'>*</span></label>
                       <input
-                        className='border-2 rounded-lg p-3 w-[100%] flex border-gray-300'
+                        className='border-2 text-black rounded-lg p-3 w-[100%] flex border-gray-300'
                         type='email'
                         name='email'
                         value={values.email}
@@ -94,7 +96,7 @@ const Contact: React.FC<ContactProps> = ({ handleLink }) => {
                   <div className='flex flex-col py-2'>
                     <label className='uppercase text-sm py-3'>Subject <span className='text-red-500'>*</span></label>
                     <input
-                      className='border-2 rounded-lg p-3 flex border-gray-300'
+                      className='border-2 text-black rounded-lg p-3 flex border-gray-300'
                       type='text'
                       name='subject'
                       value={values.subject}
@@ -104,7 +106,7 @@ const Contact: React.FC<ContactProps> = ({ handleLink }) => {
                   <div className='flex flex-col py-2'>
                     <label className='uppercase text-sm py-3'>Message <span className='text-red-500'>*</span></label>
                     <textarea
-                      className='border-2 rounded-lg p-3 flex border-gray-300'
+                      className='border-2 text-black rounded-lg p-3 flex border-gray-300'
                       rows={2}
                       value={values.message}
                       name='message'
@@ -114,6 +116,9 @@ const Contact: React.FC<ContactProps> = ({ handleLink }) => {
                 </div>
                 <button disabled={hasEmpty} className={`rounded-xl shadow-lg w-full p-5 mt-5 ${hasEmpty ? 'cursor-not-allowed bg-gray-400' : 'bg-[#46a8fd]'}`}>Send Message</button>
               </form>
+              {
+                messageSent ? <Modal isOpen={messageSent} onClose={closeModal}/> : null
+              }
             </div>
         </div>
     </div>
