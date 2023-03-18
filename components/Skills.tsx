@@ -185,8 +185,8 @@ const Skills: React.FC<SkillsProps> = ({ handleLink }) => {
           <p className='text-xl tracking-widest uppercase text-[#46a8fd]'>
             Skills
           </p>
-          <p className='uppercase text-xs py-4 tracking-widest'>
-            Tap any tech to access the Github Repositories below
+          <p className='uppercase text-s py-4 tracking-widest'>
+            Tap any tech skill or combinations to access the Github Repositories below
           </p>
           <div className='grid grid-cols-2 lg:grid-cols-4 py-4 gap-8'>
             <div
@@ -474,7 +474,7 @@ const Skills: React.FC<SkillsProps> = ({ handleLink }) => {
             </div>
           </div>
           <div className='w-auto h-auto'>
-            <p className='uppercase text-xs py-9 tracking-widest'>
+            <p className='uppercase text-s py-9 tracking-widest'>
               Github Repositories:
             </p>
             <Repositories pantry={pantry} portfolio={portfolio} binderClient={binderClient} binderServer={binderServer} handleLink={handleLink} />
