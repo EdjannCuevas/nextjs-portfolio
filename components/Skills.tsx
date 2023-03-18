@@ -180,7 +180,9 @@ const Skills: React.FC<SkillsProps> = ({ handleLink }) => {
 
 
   return (
-    <div id='skills' className='w-full lg:h-auto p-4 py-20'>
+    <div
+      id='skills'
+      className='w-full lg:h-auto p-4 py-20'>
         <div className='max-w-[1240px] mx-auto flex-col justify-center h-full'>
           <p className='text-xl tracking-widest uppercase text-[#46a8fd]'>
             Skills
