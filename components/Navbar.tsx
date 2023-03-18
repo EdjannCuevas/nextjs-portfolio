@@ -3,6 +3,7 @@ import Link from 'next/link'
 import React, { useState, useEffect } from 'react'
 import { AiOutlineClose, AiOutlineMenu, AiOutlineMail } from 'react-icons/ai'
 import { BsLinkedin, BsGithub, BsToggleOn, BsToggleOff } from 'react-icons/bs'
+import { MdLightMode, MdDarkMode } from 'react-icons/md'
 import logo from 'public/images/navLogo.png'
 
 interface NavBarProps {
@@ -44,6 +45,28 @@ const Navbar: React.FC<NavBarProps> = ({ handleLink, toggleDarkMode, darkMode })
             </Link>
         <div>
             <ul className='hidden md:flex'>
+                <div
+                    className="ml-5 text-3xl"
+                    onClick={toggleDarkMode}
+                >
+                    {
+                        darkMode
+                        ?
+                        <div className='flex'>
+                            <MdDarkMode/>
+                            <div className='ml-1 cursor-pointer hover:scale-110 ease-in duration 300'>
+                                <BsToggleOff/>
+                            </div>
+                        </div>
+                        :
+                        <div className='flex'>
+                            <MdLightMode/>
+                            <div className='ml-1 cursor-pointer hover:scale-110 ease-in duration 300'>
+                                <BsToggleOn/>
+                            </div>
+                        </div>
+                    }
+                </div>
                 <Link className='scroll-false' href='/'>
                     <li className='ml-10 text-lg uppercase hover:border-b'>Home</li>
                 </Link>
@@ -59,12 +82,6 @@ const Navbar: React.FC<NavBarProps> = ({ handleLink, toggleDarkMode, darkMode })
                 <Link className='scroll-false' href='/#contact'>
                     <li className='ml-10 text-lg uppercase hover:border-b'>Contact</li>
                 </Link>
-                <div
-                    className="absolute top-[110px] right-10 text-3xl cursor-pointer hover:scale-110 ease-in duration-200"
-                    onClick={toggleDarkMode}
-                >
-                    {darkMode ? <BsToggleOff /> : <BsToggleOn/>}
-                </div>
             </ul>
             <div onClick={handleNav} className='md:hidden cursor-pointer'>
                 <AiOutlineMenu size={25}/>
@@ -99,12 +116,6 @@ const Navbar: React.FC<NavBarProps> = ({ handleLink, toggleDarkMode, darkMode })
             </div>
             <div className='py-4 flex-col'>
                 <ul className='uppercase'>
-                    <div
-                        className="absolute top-[110px] right-11 text-3xl cursor-pointer hover:scale-110 ease-in duration-200"
-                        onClick={toggleDarkMode}
-                    >
-                        {darkMode ? <BsToggleOff /> : <BsToggleOn/>}
-                    </div>
                     <Link className='hover:scale-200 ease-in duration-300' onClick={() => setNav(false)} href='/'>
                         <li className='py-4 text-sm'>Home</li>
                     </Link>
