@@ -27,13 +27,12 @@ const Projects: React.FC<ProjectsProps> = ({ handleLink, darkMode }) => {
       id='projects'
       className='w-full lg:h-auto p-4 py-20'
     >
-      <div className='max-w-[1240px] mx-auto flex-col justify-center h-full'>
+      <div className='max-w-[1240px] mx-auto flex-col justify-center h-auto'>
         <p className='text-xl tracking-widest uppercase text-[#46a8fd]'>
           Projects
         </p>
         <div className='flex flex-col justify-center h-full'>
-          
-          <div className='max-w-[1240px] mx-auto flex flex-col-reverse md:grid lg:grid grid-cols-3 m-4 p-4 gap-2 border-4 rounded shadow-lg'>
+          <div className='max-w-[1240px] mx-auto flex flex-col-reverse mb-10 md:grid lg:min-h-[524px] lg:grid grid-cols-3 m-4 p-4 gap-2 border-4 rounded shadow-lg'>
             <div className='col-span-1'>
               <div className='flex justify-start items-center'>
                 <h2 className='py-4'>
@@ -61,6 +60,7 @@ const Projects: React.FC<ProjectsProps> = ({ handleLink, darkMode }) => {
                   <div className='flex items-center m-2 w-[25px] md:w-[30px] lg:w-[45px] rounded shadow-lg shadow-grey-400 cursor-pointer hover:scale-105 ease-in duration-300'>
                     <Image
                       alt='/'
+                      width={35}
                       src={Javascript}
                     />
                     <h3 className='pl-2'>JavaScript</h3>
@@ -68,6 +68,7 @@ const Projects: React.FC<ProjectsProps> = ({ handleLink, darkMode }) => {
                   <div className='flex items-center m-2 w-[25px] md:w-[30px] lg:w-[45px] rounded shadow-lg shadow-grey-400 cursor-pointer hover:scale-105 ease-in duration-300'>
                     <Image
                       alt='/'
+                      width={35}
                       src={Node}
                     />
                     <h3 className='pl-2'>NodeJS</h3>
@@ -75,6 +76,7 @@ const Projects: React.FC<ProjectsProps> = ({ handleLink, darkMode }) => {
                   <div className='flex items-center m-2 w-[25px] md:w-[30px] lg:w-[45px] rounded shadow-lg shadow-grey-400 cursor-pointer hover:scale-105 ease-in duration-300'>
                     <Image
                       alt='/'
+                      width={35}
                       src={Typescript}
                     />
                     <h3 className='pl-2'>Typescript</h3>
@@ -82,6 +84,7 @@ const Projects: React.FC<ProjectsProps> = ({ handleLink, darkMode }) => {
                   <div className='flex items-center m-2 w-[25px] md:w-[30px] lg:w-[45px] rounded shadow-lg shadow-grey-400 cursor-pointer hover:scale-105 ease-in duration-300'>
                     <Image
                       alt='/'
+                      width={35}
                       src={Postgres}
                     />
                     <h3 className='pl-2'>PostgreSQL</h3>
@@ -89,6 +92,7 @@ const Projects: React.FC<ProjectsProps> = ({ handleLink, darkMode }) => {
                   <div className='flex items-center m-2 w-[25px] md:w-[30px] lg:w-[45px] rounded shadow-lg shadow-grey-400 cursor-pointer hover:scale-105 ease-in duration-300'>
                     <Image
                       alt='/'
+                      width={35}
                       src={Firebase}
                     />
                     <h3 className='pl-2'>Firebase</h3>
@@ -96,6 +100,7 @@ const Projects: React.FC<ProjectsProps> = ({ handleLink, darkMode }) => {
                   <div className='flex items-center m-2 w-[25px] md:w-[30px] lg:w-[45px] rounded shadow-lg shadow-grey-400 cursor-pointer hover:scale-105 ease-in duration-300'>
                     <Image
                       alt='/'
+                      width={35}
                       src={ReactLogo}
                     />
                     <h3 className='pl-2'>ReactJS</h3>
@@ -107,7 +112,7 @@ const Projects: React.FC<ProjectsProps> = ({ handleLink, darkMode }) => {
               <Pantry handleLink={handleLink}/>
             </div>
           </div>
-          <div className='max-w-[1240px] mx-auto flex flex-col-reverse md:grid lg:grid grid-cols-3 m-4 p-4 gap-2 border-4 rounded shadow-lg'>
+          <div className='max-w-[1240px] mx-auto flex flex-col-reverse mb-10 md:grid lg:min-h-[524px] lg:grid grid-cols-3 m-4 p-4 gap-2 border-4 rounded shadow-lg'>
             <div className='col-span-1'>
             <div className='flex justify-start items-center'>
                 <h2 className='py-4'>
@@ -116,7 +121,7 @@ const Projects: React.FC<ProjectsProps> = ({ handleLink, darkMode }) => {
                 <div className='rounded p-1 m-2 bg-[#45a7fd] text-white hover:scale-105 ease-in duration-300 cursor-pointer'>
                   <FiLink
                     size={20}
-                    onClick={() => handleLink('https://www.youtube.com/watch?v=f1bMJRe4qgs&t=26s')}
+                    onClick={() => handleLink('https://www.youtube.com/watch?v=f1bMJRe4qgs&t=98s')}
                   />
                 </div>
                 <div className='rounded p-1 m-2 bg-[#45a7fd] text-white hover:scale-105 ease-in duration-300 cursor-pointer'>
@@ -135,6 +140,7 @@ const Projects: React.FC<ProjectsProps> = ({ handleLink, darkMode }) => {
                   <div className='flex items-center m-2 w-[25px] md:w-[30px] lg:w-[45px] rounded shadow-lg shadow-grey-400 cursor-pointer hover:scale-105 ease-in duration-300'>
                     <Image
                       alt='/'
+                      width={35}
                       src={JavaLogo}
                     />
                     <h3 className='pl-2'>Java</h3>
@@ -142,6 +148,7 @@ const Projects: React.FC<ProjectsProps> = ({ handleLink, darkMode }) => {
                   <div className='flex items-center m-2 w-[25px] md:w-[30px] lg:w-[45px] rounded shadow-lg shadow-grey-400 cursor-pointer hover:scale-105 ease-in duration-300'>
                     <Image
                       alt='/'
+                      width={35}
                       src={Spring}
                     />
                     <h3 className='pl-2'>Spring</h3>
@@ -149,6 +156,7 @@ const Projects: React.FC<ProjectsProps> = ({ handleLink, darkMode }) => {
                   <div className='flex items-center m-2 w-[25px] md:w-[30px] lg:w-[45px] rounded shadow-lg shadow-grey-400 cursor-pointer hover:scale-105 ease-in duration-300'>
                     <Image
                       alt='/'
+                      width={35}
                       src={Typescript}
                     />
                     <h3 className='pl-2'>Typescript</h3>
@@ -156,6 +164,7 @@ const Projects: React.FC<ProjectsProps> = ({ handleLink, darkMode }) => {
                   <div className='flex items-center m-2 w-[25px] md:w-[30px] lg:w-[45px] rounded shadow-lg shadow-grey-400 cursor-pointer hover:scale-105 ease-in duration-300'>
                     <Image
                       alt='/'
+                      width={35}
                       src={Postgres}
                     />
                     <h3 className='pl-2'>PostgreSQL</h3>
@@ -163,6 +172,7 @@ const Projects: React.FC<ProjectsProps> = ({ handleLink, darkMode }) => {
                   <div className='flex items-center m-2 w-[25px] md:w-[30px] lg:w-[45px] rounded shadow-lg shadow-grey-400 cursor-pointer hover:scale-105 ease-in duration-300'>
                     <Image
                       alt='/'
+                      width={35}
                       src={ReactLogo}
                     />
                     <h3 className='pl-2'>ReactNative</h3>
@@ -175,7 +185,7 @@ const Projects: React.FC<ProjectsProps> = ({ handleLink, darkMode }) => {
             </div>
           </div>
         </div>
-        <div className='max-w-[1240px] mx-auto flex flex-col-reverse md:grid lg:grid grid-cols-3 m-4 p-4 gap-2 border-4 rounded shadow-lg'>
+        <div className='max-w-[1240px] mx-auto flex flex-col-reverse mb-10 md:grid lg:min-h-[524px] lg:grid grid-cols-3 m-4 p-4 gap-2 border-4 rounded shadow-lg'>
             <div className='col-span-1'>
               <div className='flex justify-start items-center'>
                 <h2 className='py-4'>
@@ -203,6 +213,7 @@ const Projects: React.FC<ProjectsProps> = ({ handleLink, darkMode }) => {
                   <div className='flex items-center m-2 w-[25px] md:w-[30px] lg:w-[45px] rounded shadow-lg shadow-grey-400 cursor-pointer hover:scale-105 ease-in duration-300'>
                     <Image
                       alt='/'
+                      width={35}
                       src={Javascript}
                     />
                     <h3 className='pl-2'>JavaScript</h3>
@@ -210,6 +221,7 @@ const Projects: React.FC<ProjectsProps> = ({ handleLink, darkMode }) => {
                   <div className='flex items-center m-2 w-[25px] md:w-[30px] lg:w-[45px] rounded shadow-lg shadow-grey-400 cursor-pointer hover:scale-105 ease-in duration-300'>
                     <Image
                       alt='/'
+                      width={35}
                       src={Tailwind}
                     />
                     <h3 className='pl-2'>Tailwind</h3>
@@ -217,6 +229,7 @@ const Projects: React.FC<ProjectsProps> = ({ handleLink, darkMode }) => {
                   <div className='flex items-center m-2 w-[25px] md:w-[30px] lg:w-[45px] rounded shadow-lg shadow-grey-400 cursor-pointer hover:scale-105 ease-in duration-300'>
                     <Image
                       alt='/'
+                      width={35}
                       src={Typescript}
                     />
                     <h3 className='pl-2'>Typescript</h3>
@@ -224,6 +237,7 @@ const Projects: React.FC<ProjectsProps> = ({ handleLink, darkMode }) => {
                   <div className='flex items-center m-2 w-[25px] md:w-[30px] lg:w-[45px] rounded shadow-lg shadow-grey-400 cursor-pointer hover:scale-105 ease-in duration-300'>
                     <Image
                       alt='/'
+                      width={35}
                       src={NextJS}
                     />
                     <h3 className='pl-2'>NextJS</h3>
@@ -231,6 +245,7 @@ const Projects: React.FC<ProjectsProps> = ({ handleLink, darkMode }) => {
                   <div className='flex items-center m-2 w-[25px] md:w-[30px] lg:w-[45px] rounded shadow-lg shadow-grey-400 cursor-pointer hover:scale-105 ease-in duration-300'>
                     <Image
                       alt='/'
+                      width={35}
                       src={ReactLogo}
                     />
                     <h3 className='pl-2'>ReactJS</h3>
