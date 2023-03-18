@@ -63,8 +63,8 @@ const Repositories: React.FC<RepositoriesProps> = ({ pantry, portfolio, binderCl
     },[pantry, portfolio, binderClient, binderServer]);
 
     return (
-        <div className='flex flex-col justify-center items-center lg:grid grid-cols-2 py-4 border-2 shadow-lg h-700'>
-            {result}
+        <div className='flex flex-col justify-center items-center lg:grid grid-cols-2 py-4 border-2 shadow-lg lg:min-h-[136px]'>
+            { result }
         </div>
     )
 }
