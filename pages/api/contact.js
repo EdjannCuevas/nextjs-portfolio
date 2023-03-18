@@ -1,5 +1,29 @@
 import { mailOptions, transporter } from "../../config/nodemailer";
 
+const CONTACT_MESSAGE_FIELDS = {
+    name: 'Name',
+    email: 'Email',
+    subject: 'Subject',
+    message: 'Message',
+}
+
+const generateEmailContent = (data) => {
+    const stringData = Object.entries(data).reduce((str, [key, val]) => {
+        return str += `${CONTACT_MESSAGE_FIELDS(key)}: \n${val} \n \n`
+    }, ''
+    );
+
+    const htmlData =  Object.entries(data).reduce((str, [key, val]) => {
+        return str += `<h1>${CONTACT_MESSAGE_FIELDS[key]}</h1>`
+    }, ''
+    );
+
+    return {
+        text,
+        html,
+    }
+}
+
 const handler = async (req, res) => {
     if (req.method === 'POST') {
         const data= req.body;
