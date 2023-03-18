@@ -111,11 +111,32 @@ const Navbar: React.FC<NavBarProps> = ({ handleLink, toggleDarkMode, darkMode })
                     </div>
                 </div>
                 <div className='border-b border-grey-300 my-4'>
-                    <p className='w-[85%] md:w-[90%] py-4'>Let's build something legendary together</p>
                 </div>
             </div>
             <div className='py-4 flex-col'>
                 <ul className='uppercase'>
+                    <div
+                        className="mb-2 text-3xl"
+                        onClick={toggleDarkMode}
+                    >
+                        {
+                            darkMode
+                            ?
+                            <div className='flex'>
+                                <MdDarkMode/>
+                                <div className='ml-1 cursor-pointer hover:scale-110 ease-in duration 300'>
+                                    <BsToggleOff/>
+                                </div>
+                            </div>
+                            :
+                            <div className='flex'>
+                                <MdLightMode/>
+                                <div className='ml-1 cursor-pointer hover:scale-110 ease-in duration 300'>
+                                    <BsToggleOn/>
+                                </div>
+                            </div>
+                        }
+                    </div>
                     <Link className='hover:scale-200 ease-in duration-300' onClick={() => setNav(false)} href='/'>
                         <li className='py-4 text-sm'>Home</li>
                     </Link>
