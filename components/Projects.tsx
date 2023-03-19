@@ -194,7 +194,7 @@ const Projects: React.FC<ProjectsProps> = ({ handleLink, darkMode }) => {
                 <div className='rounded p-1 m-2 bg-[#45a7fd] text-white hover:scale-105 ease-in duration-300 cursor-pointer'>
                   <FiLink
                     size={20}
-                    onClick={() => handleLink('https://edgardocuevas-portfolio.herokuapp.com/')}
+                    onClick={() => handleLink('https://edgardocuevas.herokuapp.com/')}
                   />
                 </div>
                 <div className='rounded p-1 m-2 bg-[#45a7fd] text-white hover:scale-105 ease-in duration-300 cursor-pointer'>
