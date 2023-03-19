@@ -1,7 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
 import logo from '../public/images/navLogo.png'
-import { Link } from 'react-router-dom'
 
 interface FooterProps {
   handleLink: (arg: string) => void;
@@ -45,8 +44,8 @@ const Footer: React.FC<FooterProps> = ({ handleLink }) => {
             <p
               onClick={() => handleLink('https://www.linkedin.com/in/edgardo-cuevas-979311255/')}
               className='text-sm hover:border-b'>
-              Linked
-            In</p>
+              LinkedIn
+            </p>
             <p
               onClick={() => handleLink('https://github.com/EdjannCuevas')}
               className='text-sm hover:border-b'>
