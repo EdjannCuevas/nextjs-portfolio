@@ -8,19 +8,21 @@ const CONTACT_MESSAGE_FIELDS = {
 }
 
 const generateEmailContent = (data) => {
-    const stringData = Object.entries(data).reduce((str, [key, val]) => {
-        return str += `${CONTACT_MESSAGE_FIELDS(key)}: \n${val} \n \n`
-    }, ''
+    const stringData = Object.entries(data).reduce(
+        (str, [key, val]) => 
+            (str += `${CONTACT_MESSAGE_FIELDS[key]}: \n${val} \n \n`),
+            ''
     );
 
-    const htmlData =  Object.entries(data).reduce((str, [key, val]) => {
-        return str += `<h1>${CONTACT_MESSAGE_FIELDS[key]}</h1>`
-    }, ''
+    const htmlData =  Object.entries(data).reduce(
+        (str, [key, val]) => 
+            (str += `<h1>${CONTACT_MESSAGE_FIELDS[key]}</h1>`),
+            ''
     );
 
     return {
-        text,
-        html,
+        text:stringData,
+        html: htmlData,
     }
 }
 
@@ -36,8 +38,8 @@ const handler = async (req, res) => {
             await transporter.sendMail({
                 ...mailOptions,
                 subject: data.subject,
-                text: 'This is a test string',
-                html: '<h1>Test Title</h1><br/><p>Some text </p>'
+                text: `${data.email, data.name, data.message}`,
+                html: `<h2>${data.name}</h2><br/><p>${data.message}</p></br/><p>${data.email}</p>` 
             })
         } catch (error) {
             console.log(error);

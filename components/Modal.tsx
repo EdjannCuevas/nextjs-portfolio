@@ -41,8 +41,9 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
                         <p className="text-4xl p-4 m-6 h-[70%] text-black uppercase tracking-widest">message sent!</p>
                     </div>
                     <Link href={'/'}>
-                        <button onClick={handleClose} className="flex justify-center items-center w-full p-3 text-3xl rounded-lg h-[30%] bg-[#46a8fd] text-white hover:scale-105 ease-in duration-300 border-2 border-gray-300 focus:outline-none">
+                        <button onClick={handleClose} className="flex flex-col justify-center items-center w-full p-3 text-3xl rounded-lg h-[30%] bg-[#46a8fd] text-white hover:scale-105 ease-in duration-300 border-2 border-gray-300 focus:outline-none">
                             <HiOutlineChevronDoubleUp/>
+                            <p>Back To Top</p>
                         </button>
                     </Link>
                 </div>
