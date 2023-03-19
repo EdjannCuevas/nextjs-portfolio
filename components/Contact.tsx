@@ -52,7 +52,7 @@ const Contact: React.FC<ContactProps> = ({ handleLink }) => {
   return (
     <div
       id='contact'
-      className='w-full md:h-auto p-5 flex items-center py-20'
+      className='w-full md:h-auto p-5 flex items-center py-24'
     >
         <div className='w-full m-auto flex items-center justify-center pt-4'>
             <div className='w-full md:w-[1240] lg:w-[1240px] border-2 rounded p-5 shadow-lg'>
