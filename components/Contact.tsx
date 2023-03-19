@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { FaLinkedinIn, FaGithub } from 'react-icons/fa'
 import { sendContactForm } from '../lib/api'
+import { AiOutlineReload } from 'react-icons/ai'
 import Modal from './Modal';
 
 interface ContactProps {
@@ -20,6 +21,7 @@ const Contact: React.FC<ContactProps> = ({ handleLink }) => {
   const [state, setState] = useState(initState);
   const [hasEmpty, setHasEmpty] = useState(true);
   const [messageSent, setMessageSent] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
     const hasEmptyValue = Object.values(state.values).some((value) => value === '');
@@ -38,9 +40,11 @@ const Contact: React.FC<ContactProps> = ({ handleLink }) => {
 
   const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
+    setIsLoading(true);
     await sendContactForm(values);
     setState({ values: initValues });
     setMessageSent(true);
+    setIsLoading(false);
   };
 
   const closeModal = () => setMessageSent(false);
@@ -114,7 +118,7 @@ const Contact: React.FC<ContactProps> = ({ handleLink }) => {
                     />
                   </div>
                 </div>
-                <button disabled={hasEmpty} className={`rounded-xl shadow-lg w-full p-5 mt-5 ${hasEmpty ? 'cursor-not-allowed bg-gray-400' : 'bg-[#46a8fd]'}`}>Send Message</button>
+                <button disabled={hasEmpty} className={`flex justify-center items-center rounded-xl shadow-lg w-full p-5 mt-5 ${hasEmpty ? 'cursor-not-allowed bg-gray-400' : 'bg-[#46a8fd]'}`}>{isLoading && !messageSent ? <AiOutlineReload className='animate-spin'/> :'Send Message'}</button>
               </form>
               {
                 messageSent ? <Modal isOpen={messageSent} onClose={closeModal}/> : null
