@@ -25,7 +25,7 @@ const Projects: React.FC<ProjectsProps> = ({ handleLink, darkMode }) => {
   return (
     <div
       id='projects'
-      className='w-full lg:h-auto p-4 py-20'
+      className='w-full lg:h-auto p-4 py-24'
     >
       <div className='max-w-[1240px] mx-auto flex-col justify-center h-auto'>
         <p className='text-xl tracking-widest uppercase text-[#46a8fd]'>
