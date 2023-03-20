@@ -10,7 +10,7 @@ const About = () => {
       id='about'
       className='w-full h-auto p-4 flex items-center py-20'
     >
-        <div className='max-w-[1240px] m-auto flex gap-8'>
+        <div className='max-w-[1240px] m-auto flex'>
           <div className='col-span-2'>
             <p className='text-xl tracking-widest uppercase py-4 text-[#46a8fd]'>
               About
