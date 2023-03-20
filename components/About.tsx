@@ -30,24 +30,24 @@ const About = () => {
                   If you're looking for a software engineer who is passionate about their work and brings a unique blend of technical skills and creative thinking to the table, I'd love to hear from you. Let's work together to build something amazing!
                 </p>
               </div>
-              <div className='flex flex-col justify-center items-center md:justify-evenly md:items-end py-20'>
+              <div className='flex flex-col justify-center items-center md:flex-row md:justify-evenly md:items-end py-20'>
                 <div className='p-1'>
                   <Image
-                    className='w-[400px] lg:max-h-[300px] lg:w-[350px] rounded shadow-lg shadow-grey-400 border-3 cursor-pointer hover:scale-125 ease-in duration-300'
+                    className='w-[400px] hover:scale-105 lg:max-h-[300px] md:w-[350px] rounded shadow-lg shadow-grey-400 border-3 cursor-pointer md:hover:scale-125 ease-in duration-300'
                     src={Work}
                     alt='photo 2'
                   />
                 </div>
                 <div className='p-1'>
                   <Image
-                    className='w-[300px] lg:max-h-[500px] lg:w-[400px] rounded shadow-lg shadow-grey-400 border-3 cursor-pointer hover:scale-125 ease-in duration-300'
+                    className='w-[400px] hover:scale-105 lg:max-h-[500px] md:w-[400px] rounded shadow-lg shadow-grey-400 border-3 cursor-pointer md:hover:scale-125 ease-in duration-300'
                     src={CC28}
                     alt='photo 1'
                   />
                 </div>
                 <div className='p-1'>
                   <Image
-                      className='w-[300px] lg:max-h-[300px] rounded shadow-lg shadow-grey-400 border-3 cursor-pointer hover:scale-125 ease-in duration-300'
+                      className='w-[300px] hover:scale-105 lg:max-h-[300px] rounded shadow-lg shadow-grey-400 border-3 cursor-pointer md:hover:scale-125 ease-in duration-300'
                       src={HandsOn}
                       alt='photo 3'
                   />
