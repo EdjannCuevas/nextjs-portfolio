@@ -10,7 +10,7 @@ const Footer: React.FC<FooterProps> = ({ handleLink }) => {
   return (
     <div className='bg-gray-900 text-white w-full h-auto p-3 flex flex-col justify-center items-center'>
       <p className='text-sm p-2' >Edgardo Cuevas Jr.</p>
-      <div className='md:grid grid-cols-3 divide-x-2 gap-80'>
+      <div className='flex md:grid grid-cols-3 divide-x-2 md:gap-80'>
         <div className='flex justify-center items-center'>
           <Image
               src={logo}
