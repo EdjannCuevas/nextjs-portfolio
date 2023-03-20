@@ -42,6 +42,7 @@ const Skills: React.FC<SkillsProps> = ({ handleLink }) => {
   const [binderClient, setBinderClient] = useState(false);
   const [binderServer, setBinderServer] = useState(false);
   const [portfolio, setPortfolio] = useState(false);
+  const [isResetLoading, setIsResetLoading] = useState(false);
 
   useEffect(() => {
     const handleDisplayRepo = () => {
@@ -85,23 +86,25 @@ const Skills: React.FC<SkillsProps> = ({ handleLink }) => {
   ]);
 
   const allFalse = (
-  !java &&
-  !html &&
-  !css &&
-  !firebase &&
-  !github &&
-  !materialUI &&
-  !react &&
-  !tailwind &&
-  !typescript &&
-  !node &&
-  !postgres &&
-  !nextJs &&
-  !java &&
-  !reactNative &&
-  !spring);
+    !java &&
+    !html &&
+    !css &&
+    !firebase &&
+    !github &&
+    !materialUI &&
+    !react &&
+    !tailwind &&
+    !typescript &&
+    !node &&
+    !postgres &&
+    !nextJs &&
+    !java &&
+    !reactNative &&
+    !spring
+  );
 
   const handleReset = () => {
+    setIsResetLoading(true)
     setJavascript(false);
     setHtml(false);
     setCss(false);
@@ -116,7 +119,10 @@ const Skills: React.FC<SkillsProps> = ({ handleLink }) => {
     setNextJs(false);
     setJava(false);
     setReactNative(false);
-    setSpring(false);
+    setSpring(false); 
+    setTimeout(() => {
+      setIsResetLoading(false);
+    }, 1000);
   };
   
   const handleHtml = () => {
@@ -484,7 +490,7 @@ const Skills: React.FC<SkillsProps> = ({ handleLink }) => {
               className={`p-6 rounded-xl ${(pantry || portfolio || binderClient || binderServer) || allFalse ? '' : 'hover:scale-105 ease-in duration-300 shadow-xl border-2 border-red-500 animate-pulse'} cursor-pointer`}
             >
               <div className='grid grid-cols-2 gap-2 justify-center items-center'>
-                <div className='m-auto text-3xl'>
+                <div className={`m-auto text-3xl ${isResetLoading ? 'animate-spin' : ''}`}>
                   <GrPowerReset/>
                 </div>
                 <div className='flex flex-col items-center justify-center'>
