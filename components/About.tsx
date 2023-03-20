@@ -16,7 +16,7 @@ const About = () => {
               About
             </p>
             <div className='w-full justify-center items-center'>
-              <div className='px-10 pt-10'>
+              <div className='md:px-10 pt-10'>
                 <p className='indent-5'>
                   Hello! My name is <span className='text-[#46a8fd]'>Edgardo Cuevas</span>, and I'm a <span className='text-[#46a8fd]'>Software Developer</span> based in Kanagawa. I'm passionate about building high-quality software that makes people's lives easier and more enjoyable.
                 </p>
@@ -30,10 +30,10 @@ const About = () => {
                   If you're looking for a software engineer who is passionate about their work and brings a unique blend of technical skills and creative thinking to the table, I'd love to hear from you. Let's work together to build something amazing!
                 </p>
               </div>
-              <div className='flex justify-evenly items-end py-20'>
+              <div className='flex flex-col justify-center items-center md:justify-evenly md:items-end py-20'>
                 <div className='p-1'>
                   <Image
-                    className='w-[300px] lg:max-h-[300px] lg:w-[350px] rounded shadow-lg shadow-grey-400 border-3 cursor-pointer hover:scale-125 ease-in duration-300'
+                    className='w-[400px] lg:max-h-[300px] lg:w-[350px] rounded shadow-lg shadow-grey-400 border-3 cursor-pointer hover:scale-125 ease-in duration-300'
                     src={Work}
                     alt='photo 2'
                   />
