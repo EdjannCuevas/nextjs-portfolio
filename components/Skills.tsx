@@ -190,14 +190,18 @@ const Skills: React.FC<SkillsProps> = ({ handleLink }) => {
       id='skills'
       className='w-full lg:h-auto p-4 py-24'>
         <div className='max-w-[1240px] mx-auto flex-col justify-center h-full'>
-          <p className='text-xl tracking-widest uppercase text-[#46a8fd]'>
-            Skills
-          </p>
-          <p
-            className='uppercase text-s py-4 tracking-widest'
-          >
-            select any tech skill or combinations to access the Github Repositories below
-          </p>
+          <div className='w-full border-b-2 p-2 flex items-center justify-center'>
+            <p className='text-3xl tracking-widest uppercase text-[#46a8fd]'>
+              Skills
+            </p>
+          </div>
+          <div className='flex items-center justify-center'>
+            <p
+              className='uppercase text-s py-4 tracking-widest'
+            >
+              select any tech skill or combinations to access the Github Repositories below
+            </p>
+          </div>
           <div className='grid grid-cols-2 lg:grid-cols-4 py-4 gap-2 md:gap-8'>
             <div
               onClick={handleHtml}
@@ -484,9 +488,11 @@ const Skills: React.FC<SkillsProps> = ({ handleLink }) => {
             </div>
           </div>
           <div className='w-auto h-auto'>
-            <p className='uppercase text-s py-9 tracking-widest'>
-              Github Repositories:
-            </p>
+            <div className='flex items-center justify-center'>
+              <p className='uppercase text-s pt-9 pb-2 tracking-widest'>
+                Github Repositories
+              </p>
+            </div>
             <Repositories pantry={pantry} portfolio={portfolio} binderClient={binderClient} binderServer={binderServer} handleLink={handleLink} />
           </div>
         </div>
