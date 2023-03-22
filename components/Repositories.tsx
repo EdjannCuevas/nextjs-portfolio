@@ -48,7 +48,7 @@ const Repositories: React.FC<RepositoriesProps> = ({ pantry, portfolio, binderCl
                 const banner = repos[key][2];
                 return (
                     <div
-                        style={{backgroundColor: `${banner}`}}
+                        style={{backgroundColor: `${banner}`, borderColor: `${banner}`}}
                         key={key}
                         onClick={() => handleLink(url)}
                         className={`p-4 m-4 rounded-xl hover:scale-105 ease-in duration-300 shadow-xl border-2 cursor-pointer text-white w-[90%]`}
