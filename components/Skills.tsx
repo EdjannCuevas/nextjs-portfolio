@@ -194,12 +194,13 @@ const Skills: React.FC<SkillsProps> = ({ handleLink }) => {
           <p className='text-xl tracking-widest uppercase text-[#46a8fd]'>
             Skills
           </p>
-          <p className='uppercase text-s py-4 tracking-widest'>
+          <p
+            className='uppercase text-s py-4 tracking-widest'
+          >
             Tap any tech skill or combinations to access the Github Repositories below
           </p>
           <div className='grid grid-cols-2 lg:grid-cols-4 py-4 gap-2 md:gap-8'>
-            <Link
-              href={html ? '/#skills' : '/#repositories'}
+            <div
               onClick={handleHtml}
               className={`p-6 rounded-xl ${html ? 'border-2 border-[#46a8fd]' : 'hover:scale-105 ease-in duration-300 shadow-xl border-2'} cursor-pointer`}
             >
@@ -216,9 +217,8 @@ const Skills: React.FC<SkillsProps> = ({ handleLink }) => {
                   <h3>HTML</h3>
                 </div>
               </div>
-            </Link>
-            <Link
-              href={css ? '/#skills' : '/#repositories'}
+            </div>
+            <div
               onClick={handleCss}
               className={`p-6 rounded-xl ${css ? 'border-2 border-[#46a8fd]' : 'hover:scale-105 ease-in duration-300 shadow-xl border-2'} cursor-pointer`}
             >
@@ -235,9 +235,8 @@ const Skills: React.FC<SkillsProps> = ({ handleLink }) => {
                   <h3>CSS</h3>
                 </div>
               </div>
-            </Link>
-            <Link
-              href={javascript ? '/#skills' : '/#repositories'}
+            </div>
+            <div
               onClick={handleJavascript}
               className={`p-6 rounded-xl ${javascript ? 'border-2 border-[#46a8fd]' : 'hover:scale-105 ease-in duration-300 shadow-xl border-2'} cursor-pointer`}
             >
@@ -254,9 +253,8 @@ const Skills: React.FC<SkillsProps> = ({ handleLink }) => {
                   <h3>Javascript</h3>
                 </div>
               </div>
-            </Link>
-            <Link
-              href={node ? '/#skills' : '/#repositories'}
+            </div>
+            <div
               onClick={handleNode}
               className={`p-6 rounded-xl ${node ? 'border-2 border-[#46a8fd]' : 'hover:scale-105 ease-in duration-300 shadow-xl border-2'} cursor-pointer`}
             >
@@ -273,9 +271,8 @@ const Skills: React.FC<SkillsProps> = ({ handleLink }) => {
                   <h3>NodeJS</h3>
                 </div>
               </div>
-            </Link>
-            <Link
-              href={react ? '/#skills' : '/#repositories'}
+            </div>
+            <div
               onClick={handleReact}
               className={`p-6 rounded-xl ${react ? 'border-2 border-[#46a8fd]' : 'hover:scale-105 ease-in duration-300 shadow-xl border-2'} cursor-pointer`}
             >
@@ -292,9 +289,8 @@ const Skills: React.FC<SkillsProps> = ({ handleLink }) => {
                   <h3>React</h3>
                 </div>
               </div>
-            </Link>
-            <Link
-              href={github ? '/#skills' : '/#repositories'}
+            </div>
+            <div
               onClick={handleGithub}
               className={`p-6 rounded-xl ${github ? 'border-2 border-[#46a8fd]' : 'hover:scale-105 ease-in duration-300 shadow-xl border-2'} cursor-pointer`}
             >
@@ -311,9 +307,8 @@ const Skills: React.FC<SkillsProps> = ({ handleLink }) => {
                   <h3>Github</h3>
                 </div>
               </div>
-            </Link>
-            <Link
-              href={firebase ? '/#skills' : '/#repositories'}
+            </div>
+            <div
               onClick={handleFirebase}
               className={`p-6 rounded-xl ${firebase ? 'border-2 border-[#46a8fd]' : 'hover:scale-105 ease-in duration-300 shadow-xl border-2'} cursor-pointer`}
             >
@@ -330,9 +325,8 @@ const Skills: React.FC<SkillsProps> = ({ handleLink }) => {
                   <h3>Firebase</h3>
                 </div>
               </div>
-            </Link>
-            <Link
-              href={materialUI ? '/#skills' : '/#repositories'}
+            </div>
+            <div
               onClick={handleMaterialUI}
               className={`p-6 rounded-xl ${materialUI ? 'border-2 border-[#46a8fd]' : 'hover:scale-105 ease-in duration-300 shadow-xl border-2'} cursor-pointer`}
             >
@@ -349,10 +343,8 @@ const Skills: React.FC<SkillsProps> = ({ handleLink }) => {
                   <h3>MaterialUI</h3>
                 </div>
               </div>
-            </Link>
-            <Link
-              href={nextJs ? '/#skills' : '/#repositories'}
-              id='repositories'
+            </div>
+            <div
               onClick={handleNextJs}
               className={`p-6 rounded-xl ${nextJs ? 'border-2 border-[#46a8fd]' : 'hover:scale-105 ease-in duration-300 shadow-xl border-2'} cursor-pointer`}
             >
@@ -369,9 +361,8 @@ const Skills: React.FC<SkillsProps> = ({ handleLink }) => {
                   <h3>NextJS</h3>
                 </div>
               </div>
-            </Link>
-            <Link
-              href={tailwind ? '/#skills' : '/#repositories'}
+            </div>
+            <div
               onClick={handleTailwind}
               className={`p-6 rounded-xl ${tailwind ? 'border-2 border-[#46a8fd]' : 'hover:scale-105 ease-in duration-300 shadow-xl border-2'} cursor-pointer`}
             >
@@ -388,9 +379,8 @@ const Skills: React.FC<SkillsProps> = ({ handleLink }) => {
                   <h3>Tailwind</h3>
                 </div>
               </div>
-            </Link>
-            <Link
-              href={postgres ? '/#skills' : '/#repositories'}
+            </div>
+            <div
               onClick={handlePostgres}
               className={`p-6 rounded-xl ${postgres ? 'border-2 border-[#46a8fd]' : 'hover:scale-105 ease-in duration-300 shadow-xl border-2'} cursor-pointer`}
             >
@@ -407,9 +397,8 @@ const Skills: React.FC<SkillsProps> = ({ handleLink }) => {
                   <h3>Postgres</h3>
                 </div>
               </div>
-            </Link>
-            <Link
-              href={typescript ? '/#skills' : '/#repositories'}
+            </div>
+            <div
               onClick={handleTypescript}
               className={`p-6 rounded-xl ${typescript ? 'border-2 border-[#46a8fd]' : 'hover:scale-105 ease-in duration-300 shadow-xl border-2'} cursor-pointer`}
             >
@@ -426,9 +415,8 @@ const Skills: React.FC<SkillsProps> = ({ handleLink }) => {
                   <h3>Typescript</h3>
                 </div>
               </div>
-            </Link>
-            <Link
-              href={java ? '/#skills' : '/#repositories'}
+            </div>
+            <div
               onClick={handleJava}
               className={`p-6 rounded-xl ${java ? 'border-2 border-[#46a8fd]' : 'hover:scale-105 ease-in duration-300 shadow-xl border-2'} cursor-pointer`}
             >
@@ -445,9 +433,8 @@ const Skills: React.FC<SkillsProps> = ({ handleLink }) => {
                   <h3>Java</h3>
                 </div>
               </div>
-            </Link>
-            <Link
-              href={reactNative ? '/#skills' : '/#repositories'}
+            </div>
+            <div
               onClick={handleReactNative}
               className={`p-6 rounded-xl ${reactNative ? 'border-2 border-[#46a8fd]' : 'hover:scale-105 ease-in duration-300 shadow-xl border-2'} cursor-pointer`}
             >
@@ -464,9 +451,8 @@ const Skills: React.FC<SkillsProps> = ({ handleLink }) => {
                   <h3>ReactNative</h3>
                 </div>
               </div>
-            </Link>
-            <Link
-              href={spring ? '/#skills' : '/#repositories'}
+            </div>
+            <div
               onClick={handleSpring}
               className={`p-6 rounded-xl ${spring ? 'border-2 border-[#46a8fd]' : 'hover:scale-105 ease-in duration-300 shadow-xl border-2'} cursor-pointer`}
             >
@@ -483,9 +469,8 @@ const Skills: React.FC<SkillsProps> = ({ handleLink }) => {
                   <h3>SpringBoot</h3>
                 </div>
               </div>
-            </Link>
-            <Link
-              href={'/#skills'}
+            </div>
+            <div
               onClick={() => handleReset()}
               className={`p-6 rounded-xl ${(pantry || portfolio || binderClient || binderServer) || allFalse ? '' : 'hover:scale-105 ease-in duration-300 shadow-xl border-2 border-red-500 animate-pulse'} cursor-pointer`}
             >
@@ -497,7 +482,7 @@ const Skills: React.FC<SkillsProps> = ({ handleLink }) => {
                   <h3>Reset</h3>
                 </div>
               </div>
-            </Link>
+            </div>
           </div>
           <div className='w-auto h-auto'>
             <p className='uppercase text-s py-9 tracking-widest'>
