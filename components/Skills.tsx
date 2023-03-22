@@ -16,7 +16,6 @@ import JavaLogo from '../public/images/skills/javalogo.png'
 import Spring from '../public/images/skills/spring.png'
 import Repositories from './Repositories'
 import { GrPowerReset } from 'react-icons/gr'
-import Link from 'next/link'
 
 interface SkillsProps {
   handleLink: (arg: string) => void;
