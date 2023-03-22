@@ -9,7 +9,7 @@ import Contact from '../components/Contact'
 import Footer from '../components/Footer'
 
 export default function Home() {
-  const [darkMode, setDarkMode] = React.useState(false);
+  const [darkMode, setDarkMode] = React.useState(true);
 
   const handleLink = (url: string) => {
     window.open(url, '_blank', 'noopener,noreferrer');
