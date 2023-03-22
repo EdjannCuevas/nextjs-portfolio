@@ -12,9 +12,11 @@ const About = () => {
     >
         <div className='max-w-[1240px] m-auto flex'>
           <div className='col-span-2'>
-            <p className='text-xl tracking-widest uppercase py-4 text-[#46a8fd]'>
-              About
-            </p>
+            <div className='w-full border-b-2 p-2 flex items-center justify-center'>
+              <p className='text-3xl font-bold tracking-widest uppercase text-[#46a8fd]'>
+                about
+              </p>
+            </div>
             <div className='w-full justify-center items-center shadow-lg'>
               <div className='md:px-10 pt-10'>
                 <p className='indent-5'>

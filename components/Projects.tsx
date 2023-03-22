@@ -29,7 +29,7 @@ const Projects: React.FC<ProjectsProps> = ({ handleLink, darkMode }) => {
     >
       <div className='max-w-[1240px] mx-auto flex-col justify-center h-auto'>
         <div className='w-full border-b-2 p-2 flex items-center justify-center'>
-          <p className='text-3xl tracking-widest uppercase text-[#46a8fd]'>
+          <p className='text-3xl font-bold tracking-widest uppercase text-[#46a8fd]'>
             projects
           </p>
         </div>
