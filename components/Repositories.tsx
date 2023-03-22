@@ -1,5 +1,9 @@
+import Image, { StaticImageData } from 'next/image'
 import React, { useState, useEffect } from 'react'
 import { BsGithub } from 'react-icons/bs'
+import BxCBanner from '../public/images/projects/bnx-banner.png'
+import PantryBanner from '../public/images/projects/pantry-banner.png'
+import PortfolioBanner from '../public/images/projects/portfolio-banner.png'
 
 interface RepositoriesProps {
     pantry: boolean,
@@ -10,7 +14,7 @@ interface RepositoriesProps {
 }
 
 interface Repos {
-    [key: string]: [string, string];
+    [key: string]: [string, string, string];
   }
 
 interface RepoObject {
@@ -21,10 +25,10 @@ const Repositories: React.FC<RepositoriesProps> = ({ pantry, portfolio, binderCl
     const [result, setResult] = useState<JSX.Element[]  | null>(null);
 
     const repos: Repos = {
-        'pantry': ['/pantry-app', 'https://github.com/EdjannCuevas/pantry-app'],
-        'binderClient': ['/BookXChangeClient', 'https://github.com/Binder-team/BookXChange-client'],
-        'binderServer': ['/BookXChangeServer', 'https://github.com/Binder-team/Binder-server'],
-        'portfolio':['/nextjs-portfolio', 'https://github.com/EdjannCuevas/nextjs-portfolio'],
+        'pantry': ['/pantry-app', 'https://github.com/EdjannCuevas/pantry-app', '#6cc055'],
+        'binderClient': ['/BookXChangeClient', 'https://github.com/Binder-team/BookXChange-client', '#e0b1c1'],
+        'binderServer': ['/BookXChangeServer', 'https://github.com/Binder-team/Binder-server', '#cd6e00'],
+        'portfolio':['/nextjs-portfolio', 'https://github.com/EdjannCuevas/nextjs-portfolio', '#232939'],
     };
 
     useEffect(() => {
@@ -41,11 +45,13 @@ const Repositories: React.FC<RepositoriesProps> = ({ pantry, portfolio, binderCl
             const displayRepos = trueKeys.map((key:string) => {
                 const label = repos[key][0];
                 const url= repos[key][1];
+                const banner = repos[key][2];
                 return (
                     <div
+                        style={{backgroundColor: `${banner}`}}
                         key={key}
                         onClick={() => handleLink(url)}
-                        className='p-4 m-4 rounded-xl hover:scale-105 ease-in duration-300 shadow-xl border-2 cursor-pointer w-[90%]'
+                        className={`p-4 m-4 rounded-xl hover:scale-105 ease-in duration-300 shadow-xl border-2 cursor-pointer text-white w-[90%]`}
                     >
                     <div className='grid grid-cols-2 justify-center items-center sm:text-sm lg:text-xl'>
                         <div className='m-auto text-4xl'>
