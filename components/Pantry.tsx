@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs'
 import { RxDotFilled } from 'react-icons/rx'
-import { FiLink, FiGithub } from 'react-icons/fi'
 
 interface PantryProps {
     handleLink: (arg: string) => void;
