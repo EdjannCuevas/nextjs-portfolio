@@ -54,14 +54,14 @@ const Navbar: React.FC<NavBarProps> = ({ handleLink, toggleDarkMode, darkMode })
                         ?
                         <div className='flex'>
                             <MdDarkMode/>
-                            <div className='ml-1 cursor-pointer hover:scale-110 ease-in duration 300'>
+                            <div className='ml-1 cursor-pointer hover:scale-110 ease-in duration-300'>
                                 <BsToggleOff/>
                             </div>
                         </div>
                         :
                         <div className='flex'>
                             <MdLightMode/>
-                            <div className='ml-1 cursor-pointer hover:scale-110 ease-in duration 300'>
+                            <div className='ml-1 cursor-pointer hover:scale-110 ease-in duration-300'>
                                 <BsToggleOn/>
                             </div>
                         </div>
@@ -124,14 +124,14 @@ const Navbar: React.FC<NavBarProps> = ({ handleLink, toggleDarkMode, darkMode })
                             ?
                             <div className='flex'>
                                 <MdDarkMode/>
-                                <div className='ml-1 cursor-pointer hover:scale-110 ease-in duration 300'>
+                                <div className='ml-1 cursor-pointer hover:scale-110 ease-in duration-300'>
                                     <BsToggleOff/>
                                 </div>
                             </div>
                             :
                             <div className='flex'>
                                 <MdLightMode/>
-                                <div className='ml-1 cursor-pointer hover:scale-110 ease-in duration 300'>
+                                <div className='ml-1 cursor-pointer hover:scale-110 ease-in duration-300'>
                                     <BsToggleOn/>
                                 </div>
                             </div>
