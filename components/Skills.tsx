@@ -196,7 +196,7 @@ const Skills: React.FC<SkillsProps> = ({ handleLink }) => {
           <p
             className='uppercase text-s py-4 tracking-widest'
           >
-            Tap any tech skill or combinations to access the Github Repositories below
+            select any tech skill or combinations to access the Github Repositories below
           </p>
           <div className='grid grid-cols-2 lg:grid-cols-4 py-4 gap-2 md:gap-8'>
             <div
