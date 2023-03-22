@@ -15,7 +15,7 @@ const About = () => {
             <p className='text-xl tracking-widest uppercase py-4 text-[#46a8fd]'>
               About
             </p>
-            <div className='w-full justify-center items-center'>
+            <div className='w-full justify-center items-center shadow-lg'>
               <div className='md:px-10 pt-10'>
                 <p className='indent-5'>
                   Hello! My name is <span className='text-[#46a8fd]'>Edgardo Cuevas</span>, and I'm a <span className='text-[#46a8fd]'>Software Developer</span> based in Kanagawa. I'm passionate about building high-quality software that makes people's lives easier and more enjoyable.
