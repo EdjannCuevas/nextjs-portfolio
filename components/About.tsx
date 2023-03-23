@@ -17,7 +17,7 @@ const About = () => {
                 about
               </p>
             </div>
-            <div className='w-full justify-center items-center shadow-lg bg-black bg-opacity-25 md:hover:scale-95 ease-in duration-500 rounded-3xl mt-10'>
+            <div className='w-full justify-center items-center shadow-lg bg-black bg-opacity-25 md:hover:scale-95 ease-in duration-500 rounded-3xl mt-5'>
               <div className='p-6 md:p-10'>
                 <p className='indent-5'>
                   Hello! My name is <span className='text-[#368dda] font-bold'>Edgardo Cuevas</span>, and I'm a <span className='text-[#368dda] font-bold'>Software Developer</span> based in Kanagawa. I'm passionate about building high-quality software that makes people's lives easier and more enjoyable.
