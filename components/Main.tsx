@@ -12,7 +12,7 @@ const Main: React.FC<MainProps> = ({ handleLink }) => {
   return (
     <div id='main' className='w-full h-screen text-center'>
         <div className='max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center'>
-            <div>
+            <div className=''>
                 <p className='uppercase text-sm tracking-widest'>
                     Make the web a better place with every line of code
                 </p>
@@ -22,24 +22,24 @@ const Main: React.FC<MainProps> = ({ handleLink }) => {
                 <h1 className='py-2'>
                     A Software Developer
                 </h1>
-                <p className='py-4 max-w-[70%] m-auto'>
-                    I'm a software developer specializing in building and designing responsive front-end web applications, equipped with skills in building full stack web applications.
-                </p>
-                <div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
+                <div className='flex items-center justify-between max-w-[430px] m-auto py-4'>
                     <div
                         onClick={() => handleLink('https://www.linkedin.com/in/edgardo-cuevas-979311255/')}
-                        className='rounded shadow-lg shadow-grey-400 bg-[#46a8fd] p-7 cursor-pointer hover:scale-125 text-xl ease-in duration-300'>
-                        <FaLinkedinIn className='text-white'/>
+                        className='flex items-center justify-center rounded-3xl shadow-lg shadow-grey-400 bg-[#46a8fd] w-24 h-24 cursor-pointer hover:scale-125 ease-in duration-300'>
+                        <FaLinkedinIn className='text-white w-8 h-8'/>
                     </div>
                     <div
                         onClick={() => handleLink('https://github.com/EdjannCuevas')}
-                        className='rounded shadow-lg shadow-grey-400 bg-[#46a8fd] p-7 cursor-pointer hover:scale-125 text-xl ease-in duration-300'>
-                        <FaGithub className='text-white'/>
+                        className='flex items-center justify-center rounded-3xl shadow-lg shadow-grey-400 bg-[#46a8fd] w-24 h-24 cursor-pointer hover:scale-125 ease-in duration-300'>
+                        <FaGithub className='text-white w-8 h-8'/>
                     </div>
-                    <Link href='/#contact' className='rounded shadow-lg shadow-grey-400 bg-[#46a8fd] p-7 cursor-pointer hover:scale-125 text-xl ease-in duration-300'>
-                        <AiOutlineMail className='text-white' />
+                    <Link href='/#contact' className='flex items-center justify-center rounded-3xl shadow-lg shadow-grey-400 bg-[#46a8fd] w-24 h-24 cursor-pointer hover:scale-125 ease-in duration-300'>
+                        <AiOutlineMail className='text-white w-8 h-8'/>
                     </Link>
                 </div>
+                <p className='py-4 max-w-[70%] m-auto'>
+                    I'm a software developer specializing in building and designing responsive front-end web applications, equipped with skills in building full stack web applications.
+                </p>
             </div>
         </div>
     </div>
