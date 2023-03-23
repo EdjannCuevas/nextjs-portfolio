@@ -17,10 +17,10 @@ const About = () => {
                 about
               </p>
             </div>
-            <div className='w-full justify-center items-center shadow-lg bg-black bg-opacity-25 hover:scale-95 ease-in duration-500 rounded-3xl mt-10'>
-              <div className='md:px-10 pt-10'>
+            <div className='w-full justify-center items-center shadow-lg bg-black bg-opacity-25 md:hover:scale-95 ease-in duration-500 rounded-3xl mt-10'>
+              <div className='p-6 md:p-10'>
                 <p className='indent-5'>
-                  Hello! My name is <span className='text-[#46a8fd]'>Edgardo Cuevas</span>, and I'm a <span className='text-[#46a8fd]'>Software Developer</span> based in Kanagawa. I'm passionate about building high-quality software that makes people's lives easier and more enjoyable.
+                  Hello! My name is <span className='text-[#368dda] font-bold'>Edgardo Cuevas</span>, and I'm a <span className='text-[#368dda] font-bold'>Software Developer</span> based in Kanagawa. I'm passionate about building high-quality software that makes people's lives easier and more enjoyable.
                 </p>
                 <br />
                 <p className='indent-5'>
@@ -32,7 +32,7 @@ const About = () => {
                   If you're looking for a software engineer who is passionate about their work and brings a unique blend of technical skills and creative thinking to the table, I'd love to hear from you. Let's work together to build something amazing!
                 </p>
               </div>
-              <div className='flex flex-col justify-center items-center md:flex-row md:justify-evenly md:items-end py-20'>
+              <div className='flex flex-col justify-center items-center md:flex-row md:justify-evenly md:items-end p-10 bg-black bg-opacity-50 rounded-b-3xl'>
                 <div className='p-1'>
                   <Image
                     className='w-[400px] hover:scale-105 lg:max-h-[300px] md:w-[350px] rounded shadow-lg shadow-grey-400 border-3 cursor-pointer md:hover:scale-125 ease-in duration-300'
