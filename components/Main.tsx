@@ -25,15 +25,15 @@ const Main: React.FC<MainProps> = ({ handleLink }) => {
                 <div className='flex items-center justify-between max-w-[430px] m-auto py-4'>
                     <div
                         onClick={() => handleLink('https://www.linkedin.com/in/edgardo-cuevas-979311255/')}
-                        className='flex items-center justify-center rounded-3xl shadow-lg shadow-grey-400 bg-[#46a8fd] w-24 h-24 cursor-pointer hover:scale-125 ease-in duration-300'>
+                        className='flex items-center justify-center rounded-3xl shadow-2xl bg-[#46a8fd] w-24 h-24 cursor-pointer hover:scale-125 ease-in duration-300'>
                         <FaLinkedinIn className='text-white w-8 h-8'/>
                     </div>
                     <div
                         onClick={() => handleLink('https://github.com/EdjannCuevas')}
-                        className='flex items-center justify-center rounded-3xl shadow-lg shadow-grey-400 bg-[#46a8fd] w-24 h-24 cursor-pointer hover:scale-125 ease-in duration-300'>
+                        className='flex items-center justify-center rounded-3xl shadow-2xl bg-[#46a8fd] w-24 h-24 cursor-pointer hover:scale-125 ease-in duration-300'>
                         <FaGithub className='text-white w-8 h-8'/>
                     </div>
-                    <Link href='/#contact' className='flex items-center justify-center rounded-3xl shadow-lg shadow-grey-400 bg-[#46a8fd] w-24 h-24 cursor-pointer hover:scale-125 ease-in duration-300'>
+                    <Link href='/#contact' className='flex items-center justify-center rounded-3xl shadow-2xl bg-[#46a8fd] w-24 h-24 cursor-pointer hover:scale-125 ease-in duration-300'>
                         <AiOutlineMail className='text-white w-8 h-8'/>
                     </Link>
                 </div>

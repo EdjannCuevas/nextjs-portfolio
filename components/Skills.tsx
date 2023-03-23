@@ -208,7 +208,7 @@ const Skills: React.FC<SkillsProps> = ({ handleLink }) => {
               className={`p-6 ${html ? 'text-[#46a8fd]' : 'hover:scale-105 ease-in duration-300'} cursor-pointer`}
             >
               <div className='flex flex-col justify-center items-center'>
-                <div className={`flex items-center justify-center m-auto w-24 h-24 rounded-3xl shadow-lg ${html ? 'border-4 border-[#46a8fd]' : 'border-2 hover:scale-105 ease-in duration-300'}`}>
+                <div className={`flex items-center justify-center m-auto w-24 h-24 rounded-3xl shadow-2xl ${html ? 'bg-[#46a8fd] bg-opacity-75' : 'bg-black bg-opacity-25 hover:scale-105 ease-in duration-300'}`}>
                   <Image
                     alt='/'
                     src={Html}
@@ -226,7 +226,7 @@ const Skills: React.FC<SkillsProps> = ({ handleLink }) => {
               className={`p-6 ${css ? ' text-[#46a8fd]' : 'hover:scale-105 ease-in duration-300'} cursor-pointer`}
             >
               <div className='flex flex-col justify-center items-center'>
-                <div className={`flex items-center justify-center m-auto w-24 h-24 rounded-3xl shadow-lg ${css ? 'border-4 border-[#46a8fd]' : 'border-2 hover:scale-105 ease-in duration-300'}`}>
+                <div className={`flex items-center justify-center m-auto w-24 h-24 rounded-3xl shadow-2xl ${css ? 'bg-[#46a8fd] bg-opacity-75' : 'bg-black bg-opacity-25 hover:scale-105 ease-in duration-300'}`}>
                   <Image
                     alt='/'
                     src={Css}
@@ -244,7 +244,7 @@ const Skills: React.FC<SkillsProps> = ({ handleLink }) => {
               className={`p-6 ${javascript ? ' text-[#46a8fd]' : 'hover:scale-105 ease-in duration-300'} cursor-pointer`}
             >
               <div className='flex flex-col justify-center items-center'>
-                <div className={`flex items-center justify-center m-auto w-24 h-24 rounded-3xl shadow-lg ${javascript ? 'border-4 border-[#46a8fd]' : 'border-2 hover:scale-105 ease-in duration-300'}`}>
+                <div className={`flex items-center justify-center m-auto w-24 h-24 rounded-3xl shadow-2xl ${javascript ? 'bg-[#46a8fd] bg-opacity-75' : 'bg-black bg-opacity-25 hover:scale-105 ease-in duration-300'}`}>
                   <Image
                     alt='/'
                     src={Javascript}
@@ -262,7 +262,7 @@ const Skills: React.FC<SkillsProps> = ({ handleLink }) => {
               className={`p-6 ${node ? ' text-[#46a8fd]' : 'hover:scale-105 ease-in duration-300'} cursor-pointer`}
             >
               <div className='flex flex-col justify-center items-center'>
-                <div className={`flex items-center justify-center m-auto w-24 h-24 rounded-3xl shadow-lg ${node ? 'border-4 border-[#46a8fd]' : 'border-2 hover:scale-105 ease-in duration-300'}`}>
+                <div className={`flex items-center justify-center m-auto w-24 h-24 rounded-3xl shadow-2xl ${node ? 'bg-[#46a8fd] bg-opacity-75' : 'bg-black bg-opacity-25 hover:scale-105 ease-in duration-300'}`}>
                   <Image
                     alt='/'
                     src={Node}
@@ -280,7 +280,7 @@ const Skills: React.FC<SkillsProps> = ({ handleLink }) => {
               className={`p-6 ${typescript ? ' text-[#46a8fd]' : 'hover:scale-105 ease-in duration-300'} cursor-pointer`}
             >
               <div className='flex flex-col justify-center items-center'>
-                <div className={`flex items-center justify-center m-auto w-24 h-24 rounded-3xl shadow-lg ${typescript ? 'border-4 border-[#46a8fd]' : 'border-2 hover:scale-105 ease-in duration-300'}`}>
+                <div className={`flex items-center justify-center m-auto w-24 h-24 rounded-3xl shadow-2xl ${typescript ? 'bg-[#46a8fd] bg-opacity-75' : 'bg-black bg-opacity-25 hover:scale-105 ease-in duration-300'}`}>
                   <Image
                     alt='/'
                     src={Typescript}
@@ -298,7 +298,7 @@ const Skills: React.FC<SkillsProps> = ({ handleLink }) => {
               className={`p-6 ${react ? ' text-[#46a8fd]' : 'hover:scale-105 ease-in duration-300'} cursor-pointer`}
             >
               <div className='flex flex-col justify-center items-center'>
-                <div className={`flex items-center justify-center m-auto w-24 h-24 rounded-3xl shadow-lg ${react ? 'border-4 border-[#46a8fd]' : 'border-2 hover:scale-105 ease-in duration-300'}`}>
+                <div className={`flex items-center justify-center m-auto w-24 h-24 rounded-3xl shadow-2xl ${react ? 'bg-[#46a8fd] bg-opacity-75' : 'bg-black bg-opacity-25 hover:scale-105 ease-in duration-300'}`}>
                   <Image
                     alt='/'
                     src={ReactLogo}
@@ -316,7 +316,7 @@ const Skills: React.FC<SkillsProps> = ({ handleLink }) => {
               className={`p-6 ${github ? ' text-[#46a8fd]' : 'hover:scale-105 ease-in duration-300'} cursor-pointer`}
             >
               <div className='flex flex-col justify-center items-center'>
-                <div className={`flex items-center justify-center m-auto w-24 h-24 rounded-3xl shadow-lg ${github ? 'border-4 border-[#46a8fd]' : 'border-2 hover:scale-105 ease-in duration-300'}`}>
+                <div className={`flex items-center justify-center m-auto w-24 h-24 rounded-3xl shadow-2xl ${github ? 'bg-[#46a8fd] bg-opacity-75' : 'bg-black bg-opacity-25 hover:scale-105 ease-in duration-300'}`}>
                   <Image
                     alt='/'
                     src={Github1}
@@ -334,7 +334,7 @@ const Skills: React.FC<SkillsProps> = ({ handleLink }) => {
               className={`p-6 ${postgres ? ' text-[#46a8fd]' : 'hover:scale-105 ease-in duration-300'} cursor-pointer`}
             >
               <div className='flex flex-col justify-center items-center'>
-                <div className={`flex items-center justify-center m-auto w-24 h-24 rounded-3xl shadow-lg ${postgres ? 'border-4 border-[#46a8fd]' : 'border-2 hover:scale-105 ease-in duration-300'}`}>
+                <div className={`flex items-center justify-center m-auto w-24 h-24 rounded-3xl shadow-2xl ${postgres ? 'bg-[#46a8fd] bg-opacity-75' : 'bg-black bg-opacity-25 hover:scale-105 ease-in duration-300'}`}>
                   <Image
                     alt='/'
                     src={Postgres}
@@ -352,7 +352,7 @@ const Skills: React.FC<SkillsProps> = ({ handleLink }) => {
               className={`p-6 ${materialUI ? ' text-[#46a8fd]' : 'hover:scale-105 ease-in duration-300'} cursor-pointer`}
             >
               <div className='flex flex-col justify-center items-center'>
-                <div className={`flex items-center justify-center m-auto w-24 h-24 rounded-3xl shadow-lg ${materialUI ? 'border-4 border-[#46a8fd]' : 'border-2 hover:scale-105 ease-in duration-300'}`}>
+                <div className={`flex items-center justify-center m-auto w-24 h-24 rounded-3xl shadow-2xl ${materialUI ? 'bg-[#46a8fd] bg-opacity-75' : 'bg-black bg-opacity-25 hover:scale-105 ease-in duration-300'}`}>
                   <Image
                     alt='/'
                     src={Mui}
@@ -370,7 +370,7 @@ const Skills: React.FC<SkillsProps> = ({ handleLink }) => {
               className={`p-6 ${nextJs ? ' text-[#46a8fd]' : 'hover:scale-105 ease-in duration-300'} cursor-pointer`}
             >
               <div className='flex flex-col justify-center items-center'>
-                <div className={`flex items-center justify-center m-auto w-24 h-24 rounded-3xl shadow-lg ${nextJs ? 'border-4 border-[#46a8fd]' : 'border-2 hover:scale-105 ease-in duration-300'}`}>
+                <div className={`flex items-center justify-center m-auto w-24 h-24 rounded-3xl shadow-2xl ${nextJs ? 'bg-[#46a8fd] bg-opacity-75' : 'bg-black bg-opacity-25 hover:scale-105 ease-in duration-300'}`}>
                   <Image
                     alt='/'
                     src={Nextjs}
@@ -388,7 +388,7 @@ const Skills: React.FC<SkillsProps> = ({ handleLink }) => {
               className={`p-6 ${tailwind ? ' text-[#46a8fd]' : 'hover:scale-105 ease-in duration-300'} cursor-pointer`}
             >
               <div className='flex flex-col justify-center items-center'>
-                <div className={`flex items-center justify-center m-auto w-24 h-24 rounded-3xl shadow-lg ${tailwind ? 'border-4 border-[#46a8fd]' : 'border-2 hover:scale-105 ease-in duration-300'}`}>
+                <div className={`flex items-center justify-center m-auto w-24 h-24 rounded-3xl shadow-2xl ${tailwind ? 'bg-[#46a8fd] bg-opacity-75' : 'bg-black bg-opacity-25 hover:scale-105 ease-in duration-300'}`}>
                   <Image
                     alt='/'
                     src={Tailwind}
@@ -406,7 +406,7 @@ const Skills: React.FC<SkillsProps> = ({ handleLink }) => {
               className={`p-6 ${firebase ? ' text-[#46a8fd]' : 'hover:scale-105 ease-in duration-300'} cursor-pointer`}
             >
               <div className='flex flex-col justify-center items-center'>
-                <div className={`flex items-center justify-center m-auto w-24 h-24 rounded-3xl shadow-lg ${firebase ? 'border-4 border-[#46a8fd]' : 'border-2 hover:scale-105 ease-in duration-300'}`}>
+                <div className={`flex items-center justify-center m-auto w-24 h-24 rounded-3xl shadow-2xl ${firebase ? 'bg-[#46a8fd] bg-opacity-75' : 'bg-black bg-opacity-25 hover:scale-105 ease-in duration-300'}`}>
                   <Image
                     alt='/'
                     src={Firebase}
@@ -424,7 +424,7 @@ const Skills: React.FC<SkillsProps> = ({ handleLink }) => {
               className={`p-6 ${java ? ' text-[#46a8fd]' : 'hover:scale-105 ease-in duration-300'} cursor-pointer`}
             >
               <div className='flex flex-col justify-center items-center'>
-                <div className={`flex items-center justify-center m-auto w-24 h-24 rounded-3xl shadow-lg ${java ? 'border-4 border-[#46a8fd]' : 'border-2 hover:scale-105 ease-in duration-300'}`}>
+                <div className={`flex items-center justify-center m-auto w-24 h-24 rounded-3xl shadow-2xl ${java ? 'bg-[#46a8fd] bg-opacity-75' : 'bg-black bg-opacity-25 hover:scale-105 ease-in duration-300'}`}>
                   <Image
                     alt='/'
                     src={JavaLogo}
@@ -442,7 +442,7 @@ const Skills: React.FC<SkillsProps> = ({ handleLink }) => {
               className={`p-6 ${reactNative ? ' text-[#46a8fd]' : 'hover:scale-105 ease-in duration-300'} cursor-pointer`}
             >
               <div className='flex flex-col justify-center items-center'>
-                <div className={`flex items-center justify-center m-auto w-24 h-24 rounded-3xl shadow-lg ${reactNative ? 'border-4 border-[#46a8fd]' : 'border-2 hover:scale-105 ease-in duration-300'}`}>
+                <div className={`flex items-center justify-center m-auto w-24 h-24 rounded-3xl shadow-2xl ${reactNative ? 'bg-[#46a8fd] bg-opacity-75' : 'bg-black bg-opacity-25 hover:scale-105 ease-in duration-300'}`}>
                   <Image
                     alt='/'
                     src={ReactLogo}
@@ -460,7 +460,7 @@ const Skills: React.FC<SkillsProps> = ({ handleLink }) => {
               className={`p-6 ${spring ? ' text-[#46a8fd]' : 'hover:scale-105 ease-in duration-300'} cursor-pointer`}
             >
               <div className='flex flex-col justify-center items-center'>
-                <div className={`flex items-center justify-center m-auto w-24 h-24 rounded-3xl shadow-lg ${spring ? 'border-4 border-[#46a8fd]' : 'border-2 hover:scale-105 ease-in duration-300'}`}>
+                <div className={`flex items-center justify-center m-auto w-24 h-24 rounded-3xl shadow-2xl ${spring ? 'bg-[#46a8fd] bg-opacity-75' : 'bg-black bg-opacity-25 hover:scale-105 ease-in duration-300'}`}>
                   <Image
                     alt='/'
                     src={Spring}
