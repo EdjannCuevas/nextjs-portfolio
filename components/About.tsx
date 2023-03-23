@@ -8,7 +8,7 @@ const About = () => {
   return (
     <div
       id='about'
-      className='w-full h-auto p-4 flex items-center py-20'
+      className='w-full h-auto p-4 flex items-center py-24'
     >
         <div className='max-w-[1240px] m-auto flex'>
           <div className='col-span-2'>
@@ -17,7 +17,7 @@ const About = () => {
                 about
               </p>
             </div>
-            <div className='w-full justify-center items-center shadow-lg'>
+            <div className='w-full justify-center items-center shadow-lg bg-black bg-opacity-25 rounded-3xl mt-10'>
               <div className='md:px-10 pt-10'>
                 <p className='indent-5'>
                   Hello! My name is <span className='text-[#46a8fd]'>Edgardo Cuevas</span>, and I'm a <span className='text-[#46a8fd]'>Software Developer</span> based in Kanagawa. I'm passionate about building high-quality software that makes people's lives easier and more enjoyable.

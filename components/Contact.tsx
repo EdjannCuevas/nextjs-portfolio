@@ -55,19 +55,19 @@ const Contact: React.FC<ContactProps> = ({ handleLink }) => {
       className='w-full md:h-auto p-5 flex items-center py-24'
     >
         <div className='w-full m-auto flex items-center justify-center pt-4'>
-            <div className='w-full md:w-[1240] lg:w-[1240px] border-2 rounded p-5 shadow-lg'>
+            <div className='w-full md:w-[1240] lg:w-[1240px] rounded p-10 shadow-lg bg-black bg-opacity-25'>
               <div className='flex flex-row justify-between '>
                 <h2 className='py-4'>Get In Touch!</h2>
                 <div className='flex'>
                   <div
                     onClick={() => handleLink('https://www.linkedin.com/in/edgardo-cuevas-979311255/')} 
-                    className='flex items-center justify-center rounded shadow-lg shadow-grey-400 p-5 cursor-pointer hover:scale-105 ease-in duration-300 m-1'
+                    className='flex items-center justify-center rounded shadow-lg shadow-grey-400 p-5 bg-black bg-opacity-50 cursor-pointer border-2 hover:scale-105 ease-in duration-300 m-1'
                   >
                     <FaLinkedinIn />
                   </div>
                   <div
                     onClick={() => handleLink('https://github.com/EdjannCuevas')}
-                    className='flex items-center justify-center rounded shadow-lg shadow-grey-400 p-5 cursor-pointer hover:scale-105 ease-in duration-300 m-1'
+                    className='flex items-center justify-center rounded shadow-lg shadow-grey-400 p-5 bg-black bg-opacity-50 cursor-pointer border-2 hover:scale-105 ease-in duration-300 m-1'
                   >
                     <FaGithub />
                   </div>
