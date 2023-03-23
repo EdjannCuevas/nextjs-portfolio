@@ -189,7 +189,7 @@ const Skills: React.FC<SkillsProps> = ({ handleLink }) => {
     <div
       id='skills'
       className='w-full lg:h-auto p-4 py-24'>
-        <div className='max-w-[1240px] mx-auto flex-col justify-center h-full'>
+        <div className='max-w-[1250px] mx-auto flex-col justify-center h-full'>
           <div className='w-full border-b-2 p-2 flex items-center justify-center'>
             <p className='text-3xl font-bold tracking-widest uppercase text-[#46a8fd]'>
               Skills
@@ -202,284 +202,284 @@ const Skills: React.FC<SkillsProps> = ({ handleLink }) => {
               select any tech skill or combinations to access the Github Repositories below
             </p>
           </div>
-          <div className='grid grid-cols-2 lg:grid-cols-4 py-4 gap-2 md:gap-8'>
+          <div className='grid grid-cols-2 lg:grid-cols-8  gap-2 md:gap-2'>
             <div
               onClick={handleHtml}
-              className={`p-6 rounded-xl ${html ? 'border-2 border-[#46a8fd]' : 'hover:scale-105 ease-in duration-300 shadow-xl border-2'} cursor-pointer`}
+              className={`p-6 ${html ? 'text-[#46a8fd]' : 'hover:scale-105 ease-in duration-300'} cursor-pointer`}
             >
-              <div className='grid grid-cols-2 gap-2 justify-center items-center'>
-                <div className='m-auto'>
+              <div className='flex flex-col justify-center items-center'>
+                <div className={`flex items-center justify-center m-auto w-24 h-24 rounded-3xl shadow-lg ${html ? 'border-4 border-[#46a8fd]' : 'border-2 hover:scale-105 ease-in duration-300'}`}>
                   <Image
                     alt='/'
                     src={Html}
-                    width='30'
-                    height='30'
+                    width='50'
+                    height='50'
                   />
                 </div>
-                <div className='flex flex-col items-center justify-center'>
+                <div className='py-2 items-center justify-center'>
                   <h3>HTML</h3>
                 </div>
               </div>
             </div>
             <div
               onClick={handleCss}
-              className={`p-6 rounded-xl ${css ? 'border-2 border-[#46a8fd]' : 'hover:scale-105 ease-in duration-300 shadow-xl border-2'} cursor-pointer`}
+              className={`p-6 ${css ? ' text-[#46a8fd]' : 'hover:scale-105 ease-in duration-300'} cursor-pointer`}
             >
-              <div className='grid grid-cols-2 gap-2 justify-center items-center'>
-                <div className='m-auto'>
+              <div className='flex flex-col justify-center items-center'>
+                <div className={`flex items-center justify-center m-auto w-24 h-24 rounded-3xl shadow-lg ${css ? 'border-4 border-[#46a8fd]' : 'border-2 hover:scale-105 ease-in duration-300'}`}>
                   <Image
                     alt='/'
                     src={Css}
-                    width='30'
-                    height='30'
+                    width='50'
+                    height='50'
                   />
                 </div>
-                <div className='flex flex-col items-center justify-center'>
+                <div className='py-2 items-center justify-center'>
                   <h3>CSS</h3>
                 </div>
               </div>
             </div>
             <div
               onClick={handleJavascript}
-              className={`p-6 rounded-xl ${javascript ? 'border-2 border-[#46a8fd]' : 'hover:scale-105 ease-in duration-300 shadow-xl border-2'} cursor-pointer`}
+              className={`p-6 ${javascript ? ' text-[#46a8fd]' : 'hover:scale-105 ease-in duration-300'} cursor-pointer`}
             >
-              <div className='grid grid-cols-2 gap-2 justify-center items-center'>
-                <div className='m-auto'>
+              <div className='flex flex-col justify-center items-center'>
+                <div className={`flex items-center justify-center m-auto w-24 h-24 rounded-3xl shadow-lg ${javascript ? 'border-4 border-[#46a8fd]' : 'border-2 hover:scale-105 ease-in duration-300'}`}>
                   <Image
                     alt='/'
                     src={Javascript}
-                    width='30'
-                    height='30'
+                    width='50'
+                    height='50'
                   />
                 </div>
-                <div className='flex flex-col items-center justify-center'>
+                <div className='py-2 items-center justify-center'>
                   <h3>Javascript</h3>
                 </div>
               </div>
             </div>
             <div
               onClick={handleNode}
-              className={`p-6 rounded-xl ${node ? 'border-2 border-[#46a8fd]' : 'hover:scale-105 ease-in duration-300 shadow-xl border-2'} cursor-pointer`}
+              className={`p-6 ${node ? ' text-[#46a8fd]' : 'hover:scale-105 ease-in duration-300'} cursor-pointer`}
             >
-              <div className='grid grid-cols-2 gap-2 justify-center items-center'>
-                <div className='m-auto'>
+              <div className='flex flex-col justify-center items-center'>
+                <div className={`flex items-center justify-center m-auto w-24 h-24 rounded-3xl shadow-lg ${node ? 'border-4 border-[#46a8fd]' : 'border-2 hover:scale-105 ease-in duration-300'}`}>
                   <Image
                     alt='/'
                     src={Node}
-                    width='30'
-                    height='30'
+                    width='50'
+                    height='50'
                   />
                 </div>
-                <div className='flex flex-col items-center justify-center'>
+                <div className='py-2 items-center justify-center'>
                   <h3>NodeJS</h3>
                 </div>
               </div>
             </div>
             <div
-              onClick={handleReact}
-              className={`p-6 rounded-xl ${react ? 'border-2 border-[#46a8fd]' : 'hover:scale-105 ease-in duration-300 shadow-xl border-2'} cursor-pointer`}
+              onClick={handleTypescript}
+              className={`p-6 ${typescript ? ' text-[#46a8fd]' : 'hover:scale-105 ease-in duration-300'} cursor-pointer`}
             >
-              <div className='grid grid-cols-2 gap-2 justify-center items-center'>
-                <div className='m-auto'>
+              <div className='flex flex-col justify-center items-center'>
+                <div className={`flex items-center justify-center m-auto w-24 h-24 rounded-3xl shadow-lg ${typescript ? 'border-4 border-[#46a8fd]' : 'border-2 hover:scale-105 ease-in duration-300'}`}>
+                  <Image
+                    alt='/'
+                    src={Typescript}
+                    width='50'
+                    height='50'
+                  />
+                </div>
+                <div className='py-2 items-center justify-center'>
+                  <h3>Typescript</h3>
+                </div>
+              </div>
+            </div>
+            <div
+              onClick={handleReact}
+              className={`p-6 ${react ? ' text-[#46a8fd]' : 'hover:scale-105 ease-in duration-300'} cursor-pointer`}
+            >
+              <div className='flex flex-col justify-center items-center'>
+                <div className={`flex items-center justify-center m-auto w-24 h-24 rounded-3xl shadow-lg ${react ? 'border-4 border-[#46a8fd]' : 'border-2 hover:scale-105 ease-in duration-300'}`}>
                   <Image
                     alt='/'
                     src={ReactLogo}
-                    width='30'
-                    height='30'
+                    width='50'
+                    height='50'
                   />
                 </div>
-                <div className='flex flex-col items-center justify-center'>
+                <div className='py-2 items-center justify-center'>
                   <h3>React</h3>
                 </div>
               </div>
             </div>
             <div
               onClick={handleGithub}
-              className={`p-6 rounded-xl ${github ? 'border-2 border-[#46a8fd]' : 'hover:scale-105 ease-in duration-300 shadow-xl border-2'} cursor-pointer`}
+              className={`p-6 ${github ? ' text-[#46a8fd]' : 'hover:scale-105 ease-in duration-300'} cursor-pointer`}
             >
-              <div className='grid grid-cols-2 gap-2 justify-center items-center'>
-                <div className='m-auto'>
+              <div className='flex flex-col justify-center items-center'>
+                <div className={`flex items-center justify-center m-auto w-24 h-24 rounded-3xl shadow-lg ${github ? 'border-4 border-[#46a8fd]' : 'border-2 hover:scale-105 ease-in duration-300'}`}>
                   <Image
                     alt='/'
                     src={Github1}
-                    width='30'
-                    height='30'
+                    width='50'
+                    height='50'
                   />
                 </div>
-                <div className='flex flex-col items-center justify-center'>
+                <div className='py-2 items-center justify-center'>
                   <h3>Github</h3>
                 </div>
               </div>
             </div>
             <div
-              onClick={handleFirebase}
-              className={`p-6 rounded-xl ${firebase ? 'border-2 border-[#46a8fd]' : 'hover:scale-105 ease-in duration-300 shadow-xl border-2'} cursor-pointer`}
+              onClick={handlePostgres}
+              className={`p-6 ${postgres ? ' text-[#46a8fd]' : 'hover:scale-105 ease-in duration-300'} cursor-pointer`}
             >
-              <div className='grid grid-cols-2 gap-2 justify-center items-center'>
-                <div className='m-auto'>
+              <div className='flex flex-col justify-center items-center'>
+                <div className={`flex items-center justify-center m-auto w-24 h-24 rounded-3xl shadow-lg ${postgres ? 'border-4 border-[#46a8fd]' : 'border-2 hover:scale-105 ease-in duration-300'}`}>
                   <Image
                     alt='/'
-                    src={Firebase}
-                    width='30'
-                    height='30'
+                    src={Postgres}
+                    width='50'
+                    height='50'
                   />
                 </div>
-                <div className='flex flex-col items-center justify-center'>
-                  <h3>Firebase</h3>
+                <div className='py-2 items-center justify-center'>
+                  <h3>Postgres</h3>
                 </div>
               </div>
             </div>
             <div
               onClick={handleMaterialUI}
-              className={`p-6 rounded-xl ${materialUI ? 'border-2 border-[#46a8fd]' : 'hover:scale-105 ease-in duration-300 shadow-xl border-2'} cursor-pointer`}
+              className={`p-6 ${materialUI ? ' text-[#46a8fd]' : 'hover:scale-105 ease-in duration-300'} cursor-pointer`}
             >
-              <div className='grid grid-cols-2 gap-2 justify-center items-center'>
-                <div className='m-auto'>
+              <div className='flex flex-col justify-center items-center'>
+                <div className={`flex items-center justify-center m-auto w-24 h-24 rounded-3xl shadow-lg ${materialUI ? 'border-4 border-[#46a8fd]' : 'border-2 hover:scale-105 ease-in duration-300'}`}>
                   <Image
                     alt='/'
                     src={Mui}
-                    width='30'
-                    height='30'
+                    width='50'
+                    height='50'
                   />
                 </div>
-                <div className='flex flex-col items-center justify-center'>
+                <div className='py-2 items-center justify-center'>
                   <h3>MaterialUI</h3>
                 </div>
               </div>
             </div>
             <div
               onClick={handleNextJs}
-              className={`p-6 rounded-xl ${nextJs ? 'border-2 border-[#46a8fd]' : 'hover:scale-105 ease-in duration-300 shadow-xl border-2'} cursor-pointer`}
+              className={`p-6 ${nextJs ? ' text-[#46a8fd]' : 'hover:scale-105 ease-in duration-300'} cursor-pointer`}
             >
-              <div className='grid grid-cols-2 gap-2 justify-center items-center'>
-                <div className='m-auto'>
+              <div className='flex flex-col justify-center items-center'>
+                <div className={`flex items-center justify-center m-auto w-24 h-24 rounded-3xl shadow-lg ${nextJs ? 'border-4 border-[#46a8fd]' : 'border-2 hover:scale-105 ease-in duration-300'}`}>
                   <Image
                     alt='/'
                     src={Nextjs}
-                    width='30'
-                    height='30'
+                    width='50'
+                    height='50'
                   />
                 </div>
-                <div className='flex flex-col items-center justify-center'>
+                <div className='py-2 items-center justify-center'>
                   <h3>NextJS</h3>
                 </div>
               </div>
             </div>
             <div
               onClick={handleTailwind}
-              className={`p-6 rounded-xl ${tailwind ? 'border-2 border-[#46a8fd]' : 'hover:scale-105 ease-in duration-300 shadow-xl border-2'} cursor-pointer`}
+              className={`p-6 ${tailwind ? ' text-[#46a8fd]' : 'hover:scale-105 ease-in duration-300'} cursor-pointer`}
             >
-              <div className='grid grid-cols-2 gap-2 justify-center items-center'>
-                <div className='m-auto'>
+              <div className='flex flex-col justify-center items-center'>
+                <div className={`flex items-center justify-center m-auto w-24 h-24 rounded-3xl shadow-lg ${tailwind ? 'border-4 border-[#46a8fd]' : 'border-2 hover:scale-105 ease-in duration-300'}`}>
                   <Image
                     alt='/'
                     src={Tailwind}
-                    width='30'
-                    height='30'
+                    width='50'
+                    height='50'
                   />
                 </div>
-                <div className='flex flex-col items-center justify-center'>
+                <div className='py-2 items-center justify-center'>
                   <h3>Tailwind</h3>
                 </div>
               </div>
             </div>
             <div
-              onClick={handlePostgres}
-              className={`p-6 rounded-xl ${postgres ? 'border-2 border-[#46a8fd]' : 'hover:scale-105 ease-in duration-300 shadow-xl border-2'} cursor-pointer`}
+              onClick={handleFirebase}
+              className={`p-6 ${firebase ? ' text-[#46a8fd]' : 'hover:scale-105 ease-in duration-300'} cursor-pointer`}
             >
-              <div className='grid grid-cols-2 gap-2 justify-center items-center'>
-                <div className='m-auto'>
+              <div className='flex flex-col justify-center items-center'>
+                <div className={`flex items-center justify-center m-auto w-24 h-24 rounded-3xl shadow-lg ${firebase ? 'border-4 border-[#46a8fd]' : 'border-2 hover:scale-105 ease-in duration-300'}`}>
                   <Image
                     alt='/'
-                    src={Postgres}
-                    width='30'
-                    height='30'
+                    src={Firebase}
+                    width='50'
+                    height='50'
                   />
                 </div>
-                <div className='flex flex-col items-center justify-center'>
-                  <h3>Postgres</h3>
-                </div>
-              </div>
-            </div>
-            <div
-              onClick={handleTypescript}
-              className={`p-6 rounded-xl ${typescript ? 'border-2 border-[#46a8fd]' : 'hover:scale-105 ease-in duration-300 shadow-xl border-2'} cursor-pointer`}
-            >
-              <div className='grid grid-cols-2 gap-2 justify-center items-center'>
-                <div className='m-auto'>
-                  <Image
-                    alt='/'
-                    src={Typescript}
-                    width='30'
-                    height='30'
-                  />
-                </div>
-                <div className='flex flex-col items-center justify-center'>
-                  <h3>Typescript</h3>
+                <div className='py-2 items-center justify-center'>
+                  <h3>Firebase</h3>
                 </div>
               </div>
             </div>
             <div
               onClick={handleJava}
-              className={`p-6 rounded-xl ${java ? 'border-2 border-[#46a8fd]' : 'hover:scale-105 ease-in duration-300 shadow-xl border-2'} cursor-pointer`}
+              className={`p-6 ${java ? ' text-[#46a8fd]' : 'hover:scale-105 ease-in duration-300'} cursor-pointer`}
             >
-              <div className='grid grid-cols-2 gap-2 justify-center items-center'>
-                <div className='m-auto'>
+              <div className='flex flex-col justify-center items-center'>
+                <div className={`flex items-center justify-center m-auto w-24 h-24 rounded-3xl shadow-lg ${java ? 'border-4 border-[#46a8fd]' : 'border-2 hover:scale-105 ease-in duration-300'}`}>
                   <Image
                     alt='/'
                     src={JavaLogo}
-                    width='30'
-                    height='30'
+                    width='50'
+                    height='50'
                   />
                 </div>
-                <div className='flex flex-col items-center justify-center'>
+                <div className='py-2 items-center justify-center'>
                   <h3>Java</h3>
                 </div>
               </div>
             </div>
             <div
               onClick={handleReactNative}
-              className={`p-6 rounded-xl ${reactNative ? 'border-2 border-[#46a8fd]' : 'hover:scale-105 ease-in duration-300 shadow-xl border-2'} cursor-pointer`}
+              className={`p-6 ${reactNative ? ' text-[#46a8fd]' : 'hover:scale-105 ease-in duration-300'} cursor-pointer`}
             >
-              <div className='grid grid-cols-2 gap-2 justify-center items-center'>
-                <div className='m-auto'>
+              <div className='flex flex-col justify-center items-center'>
+                <div className={`flex items-center justify-center m-auto w-24 h-24 rounded-3xl shadow-lg ${reactNative ? 'border-4 border-[#46a8fd]' : 'border-2 hover:scale-105 ease-in duration-300'}`}>
                   <Image
                     alt='/'
                     src={ReactLogo}
-                    width='30'
-                    height='30'
+                    width='50'
+                    height='50'
                   />
                 </div>
-                <div className='flex flex-col items-center justify-center'>
+                <div className='py-2 items-center justify-center'>
                   <h3>ReactNative</h3>
                 </div>
               </div>
             </div>
             <div
               onClick={handleSpring}
-              className={`p-6 rounded-xl ${spring ? 'border-2 border-[#46a8fd]' : 'hover:scale-105 ease-in duration-300 shadow-xl border-2'} cursor-pointer`}
+              className={`p-6 ${spring ? ' text-[#46a8fd]' : 'hover:scale-105 ease-in duration-300'} cursor-pointer`}
             >
-              <div className='grid grid-cols-2 gap-2 justify-center items-center'>
-                <div className='m-auto'>
+              <div className='flex flex-col justify-center items-center'>
+                <div className={`flex items-center justify-center m-auto w-24 h-24 rounded-3xl shadow-lg ${spring ? 'border-4 border-[#46a8fd]' : 'border-2 hover:scale-105 ease-in duration-300'}`}>
                   <Image
                     alt='/'
                     src={Spring}
-                    width='30'
-                    height='30'
+                    width='50'
+                    height='50'
                   />
                 </div>
-                <div className='flex flex-col items-center justify-center'>
+                <div className='py-2 items-center justify-center'>
                   <h3>SpringBoot</h3>
                 </div>
               </div>
             </div>
             <div
               onClick={() => handleReset()}
-              className={`p-6 rounded-xl ${(pantry || portfolio || binderClient || binderServer) || allFalse ? '' : 'hover:scale-105 ease-in duration-300 shadow-xl border-2 border-red-500 animate-pulse'} cursor-pointer`}
+              className={`p-6 ${(pantry || portfolio || binderClient || binderServer) || allFalse ? '' : 'hover:scale-105 ease-in duration-300'} cursor-pointer`}
             >
-              <div className='grid grid-cols-2 gap-2 justify-center items-center'>
-                <div className={`m-auto text-3xl ${isResetLoading ? 'animate-spin' : ''}`}>
-                  <GrPowerReset/>
+              <div className='flex flex-col gap-2 justify-center items-center'>
+                <div className={`flex items-center justify-center m-auto text-3xl w-24 h-24 rounded-3xl ${(pantry || portfolio || binderClient || binderServer) || allFalse ? '' : 'hover:scale-105 ease-in duration-300 border-4 shadow-lg border-red-500 animate-pulse'}`}>
+                  <GrPowerReset className={` ${isResetLoading ? 'animate-spin' : ''}`}/>
                 </div>
                 <div className='flex flex-col items-center justify-center'>
                   <h3>Reset</h3>
@@ -490,7 +490,7 @@ const Skills: React.FC<SkillsProps> = ({ handleLink }) => {
           <div className='w-auto h-auto'>
             <div className='flex items-center justify-center'>
               <p className='uppercase text-s pt-9 pb-2 tracking-widest'>
-                Github Repositories
+                Repositories
               </p>
             </div>
             <Repositories pantry={pantry} portfolio={portfolio} binderClient={binderClient} binderServer={binderServer} handleLink={handleLink} />
