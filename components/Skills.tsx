@@ -41,6 +41,7 @@ const Skills: React.FC<SkillsProps> = ({ handleLink }) => {
   const [binderClient, setBinderClient] = useState(false);
   const [binderServer, setBinderServer] = useState(false);
   const [portfolio, setPortfolio] = useState(false);
+  const [pantryv2, setPantryv2] = useState(false);
   const [isResetLoading, setIsResetLoading] = useState(false);
 
   useEffect(() => {
@@ -49,6 +50,11 @@ const Skills: React.FC<SkillsProps> = ({ handleLink }) => {
         && (!java && !tailwind && !nextJs && !reactNative && !spring)) {
           setPantry(true);
       } else setPantry(false);
+
+      if ((html || css || javascript || typescript || materialUI || tailwind || react || github || postgres || node)
+        && (!java && !firebase && !nextJs && !reactNative && !spring)) {
+          setPantryv2(true);
+      } else setPantryv2(false);
 
       if ((html || css || javascript || typescript || reactNative || github)
       && (!java && !tailwind && !nextJs && !materialUI && !firebase && !react && !postgres && !node && !spring)) {
@@ -493,7 +499,7 @@ const Skills: React.FC<SkillsProps> = ({ handleLink }) => {
                 Repositories
               </p>
             </div>
-            <Repositories pantry={pantry} portfolio={portfolio} binderClient={binderClient} binderServer={binderServer} handleLink={handleLink} />
+            <Repositories pantry={pantry} portfolio={portfolio} binderClient={binderClient} binderServer={binderServer} pantryv2={pantryv2} handleLink={handleLink} />
           </div>
         </div>
     </div>

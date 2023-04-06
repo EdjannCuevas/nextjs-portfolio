@@ -7,6 +7,7 @@ import PortfolioBanner from '../public/images/projects/portfolio-banner.png'
 
 interface RepositoriesProps {
     pantry: boolean,
+    pantryv2: boolean,
     portfolio: boolean,
     binderClient: boolean,
     binderServer: boolean,
@@ -21,10 +22,11 @@ interface RepoObject {
     [key: string]: boolean;
 }
 
-const Repositories: React.FC<RepositoriesProps> = ({ pantry, portfolio, binderClient, binderServer, handleLink }) => {
+const Repositories: React.FC<RepositoriesProps> = ({ pantryv2, pantry, portfolio, binderClient, binderServer, handleLink }) => {
     const [result, setResult] = useState<JSX.Element[]  | null>(null);
 
     const repos: Repos = {
+        'pantryv2': ['/pantry-2.0', 'https://github.com/EdjannCuevas/pantry-2.0', '#7AC666'],
         'pantry': ['/pantry-app', 'https://github.com/EdjannCuevas/pantry-app', '#6cc055'],
         'binderClient': ['/BookXChangeClient', 'https://github.com/Binder-team/BookXChange-client', '#e0b1c1'],
         'binderServer': ['/BookXChangeServer', 'https://github.com/Binder-team/Binder-server', '#cd6e00'],
@@ -34,6 +36,7 @@ const Repositories: React.FC<RepositoriesProps> = ({ pantry, portfolio, binderCl
     useEffect(() => {
 
         const repoObject: RepoObject[] = [
+            {pantryv2: pantryv2},
             {pantry: pantry},
             {portfolio: portfolio},
             {binderClient: binderClient},
@@ -66,7 +69,7 @@ const Repositories: React.FC<RepositoriesProps> = ({ pantry, portfolio, binderCl
             setResult(displayRepos);
         }
         handleChange();
-    },[pantry, portfolio, binderClient, binderServer]);
+    },[pantry, portfolio, binderClient, binderServer, pantryv2]);
 
     return (
         <div className='flex flex-col justify-center bg-black bg-opacity-25 items-center lg:grid grid-cols-2 py-4 rounded-lg shadow-xl lg:min-h-[136px]'>
