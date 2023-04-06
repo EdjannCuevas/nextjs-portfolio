@@ -2,16 +2,17 @@ import React, { useState } from 'react'
 import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs'
 import { RxDotFilled } from 'react-icons/rx'
 
-interface PantryProps {
+interface Pantryv2Props {
     handleLink: (arg: string) => void;
 }
 
-const Pantry: React.FC<PantryProps> = ({ handleLink }) => {
+const Pantryv2: React.FC<Pantryv2Props> = ({ handleLink }) => {
     const slides = [
-        '/images/projects/addIngredients.png',
-        '/images/projects/recipesPage.png',
-        '/images/projects/ingredientsListsPage.png',
-        '/images/projects/loginPage.png',
+        '/images/projects/pantryv2-hero.png',
+        '/images/projects/pantryv2-home.png',
+        '/images/projects/pantryv2-recipe.png',
+        '/images/projects/pantryv2-recipemodal.png',
+        '/images/projects/pantryv2-grocerymodal.png',
     ];
 
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -63,4 +64,4 @@ const Pantry: React.FC<PantryProps> = ({ handleLink }) => {
     )
 }
 
-export default Pantry;
+export default Pantryv2;
