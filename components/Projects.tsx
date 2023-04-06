@@ -44,7 +44,7 @@ const Projects: React.FC<ProjectsProps> = ({ handleLink, darkMode }) => {
                 <div className='rounded p-1 m-2 bg-[#45a7fd] text-white hover:scale-105 ease-in duration-300 cursor-pointer'>
                   <FiLink
                     size={20}
-                    onClick={() => handleLink('https://pantryv2.herokuapp.com/')}
+                    onClick={() => handleLink('https://pantry2.herokuapp.com/')}
                   />
                 </div>
                 <div className='rounded p-1 m-2 bg-[#45a7fd] text-white hover:scale-105 ease-in duration-300 cursor-pointer'>
@@ -124,7 +124,7 @@ const Projects: React.FC<ProjectsProps> = ({ handleLink, darkMode }) => {
                 <div className='rounded p-1 m-2 bg-[#45a7fd] text-white hover:scale-105 ease-in duration-300 cursor-pointer'>
                   <FiLink
                     size={20}
-                    onClick={() => handleLink('https://pantry.herokuapp.com/')}
+                    onClick={() => handleLink('https://pantry2.herokuapp.com/')}
                   />
                 </div>
                 <div className='rounded p-1 m-2 bg-[#45a7fd] text-white hover:scale-105 ease-in duration-300 cursor-pointer'>
